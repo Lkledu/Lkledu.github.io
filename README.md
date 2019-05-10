@@ -13,3 +13,5 @@ http://www.mcihanozer.com/tips/setting-up-libraries/setting-up-glew-for-visual-s
 instalei o windows SDK, baixei através de https://developer.microsoft.com/pt-br/windows/downloads/sdk-archive
 
 09/05/2019 17:12 - único link que adiantou https://www.youtube.com/watch?v=vGptI11wRxE , e no fim das contas eu estava instalando a lib errada do glfw, eu estou com visual studio 2017 e estava instalando a vs2015
+
+10/05/2019 01:46 - No fim das contas não deu certo configurar as libs do visual studio na mão e usei o NuGet para instalar
