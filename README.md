@@ -15,3 +15,5 @@ instalei o windows SDK, baixei através de https://developer.microsoft.com/pt-br
 09/05/2019 17:12 - único link que adiantou https://www.youtube.com/watch?v=vGptI11wRxE , e no fim das contas eu estava instalando a lib errada do glfw, eu estou com visual studio 2017 e estava instalando a vs2015
 
 10/05/2019 01:46 - No fim das contas não deu certo configurar as libs do visual studio na mão e usei o NuGet para instalar
+
+17/05/2019 03:25 - Iniciado os testes para a criação de um triangulo usando OpenGL
