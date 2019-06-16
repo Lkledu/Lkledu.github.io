@@ -17,3 +17,6 @@ instalei o windows SDK, baixei através de https://developer.microsoft.com/pt-br
 10/05/2019 01:46 - No fim das contas não deu certo configurar as libs do visual studio na mão e usei o NuGet para instalar
 
 17/05/2019 03:25 - Iniciado os testes para a criação de um triangulo usando OpenGL
+
+17/05/2019 06:07 - Feito modificações na criação da janela para abrir no monitor principal pegando a area da tela inteira em modo janela e maximizada
+	Problema ao definir VAO, access violation exception
