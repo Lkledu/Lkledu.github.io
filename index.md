@@ -16,7 +16,6 @@ tags_summary:
 Teste..
 Blog onde escrevo sobre meus projetos e oque estou estudando
 
-<!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
