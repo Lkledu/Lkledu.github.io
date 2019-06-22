@@ -1,8 +1,0 @@
-{%- assign config = page.nav_toggler -%}
-{%- assign target = '#nav' -%}
-{%- assign text = config.text.text | default: t.menu -%}
-{%- assign title = config.title | default: t.toggle_menu -%}
-{%- assign class = config.class | default: 'btn btn-secondary' | append: page.bottom_navbar.button.extra_class -%}
-{%- assign icon_class = config.icon.class | default: 'fa-bars' | append: page.bottom_navbar.icon.extra_class -%}
-
-{%- include bootstrap-components/toggler.html element=page.bottom_navbar.button.element target=target text=text title=title class=class icon_class=icon_class text_class=config.text.class toggle='modal' -%}

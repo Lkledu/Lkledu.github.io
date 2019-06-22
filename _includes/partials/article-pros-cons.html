@@ -1,15 +1,0 @@
-{%- assign post = include.post | default: page -%}{%- if post.pros or post.cons -%}
-<div class="row">{%- if post.pros -%}
-    <div class="col-md-6">
-        <h3><span class="glyphicon glyphicon-thumbs-up"></span> Pros</h3>
-        <ul class="pros-cons pros">{%- for pro in post.pros -%}
-            <li>{{ pro }}</li>{%- endfor -%}
-        </ul>
-    </div>{%- endif -%}{%- if post.cons -%}
-    <div class="col-md-6">
-        <h3><span class="glyphicon glyphicon-thumbs-down"></span> Cons</h3>
-        <ul class="pros-cons cons">{%- for con in post.cons -%}
-            <li>{{ con }}</li>{%- endfor -%}
-        </ul>
-    </div>{%- endif -%}
-</div>{%- endif -%}
