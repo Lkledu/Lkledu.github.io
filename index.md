@@ -20,17 +20,7 @@ tags_summary:
 <!DOCTYPE html>
 <html lang="en">
 
-  <head itemscope itemtype="http://schema.org/WebSite">
-  <link href="http://gmpg.org/xfn/11" rel="profile">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="alternate" type="application/rss+xml" title="Overkyll RSS Feed" href="/overkyll-jekyll-theme/feed/"/>
-  <link rel="canonical" href="/overkyll-jekyll-theme/">
-
   <title>Home</title>
-  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-">
 
   <style type="text/css">
     
