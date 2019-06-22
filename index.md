@@ -768,9 +768,5 @@ layout: home
                 <p>Check out the <a href="http://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
             </section>
         </main>
-        <script src=/overkyll-jekyll-theme/assets/js/instantclick.min.js  data-no-instant></script>
-        <script data-no-instant>
-        InstantClick.init();
-        </script>
     </body>
 </html>
