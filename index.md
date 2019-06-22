@@ -735,7 +735,6 @@ layout: home
                     </ul>
                 </nav>
             </div>
-        
         </header>
         
         
