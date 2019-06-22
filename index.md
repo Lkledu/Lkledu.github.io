@@ -645,7 +645,6 @@ layout: home
             [c]2015 @scottjehl, Filament Group, Inc.
             Licensed MIT
             */
-            
             (function(w){
             "use strict";
             /* exported loadCSS */
@@ -726,7 +725,7 @@ layout: home
         <header class="site-header" role="banner">
             <div class="site-header-top site-header-top__align wrapper">
                 <p class="site-logo">
-                    <a class="site-title" href="/overkyll-jekyll-theme/">Overkyll</a>
+                    <a class="site-title" href="/overkyll-jekyll-theme/">Lkledu.io</a>
                 </p>
                 
                 <nav class="nav-main nav-main__scroll" role="navigation">
@@ -742,6 +741,8 @@ layout: home
         
         <main id="main">
             <section class="post wrapper">
+                <h1><a href="/overkyll-jekyll-theme/2017/02/09/welcome-to-jekyll.html">Welcome to the overkyll jekyll theme</a></h1>
+                <p class="post-meta">09/02/2017</p>
                 <p>Very minimal starter theme for Jekyll.</p>
                 
                 <h2 id="overkyll-jekyll-theme">Overkyll jekyll theme</h2>
