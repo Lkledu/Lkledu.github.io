@@ -133,12 +133,10 @@ tags_summary:
 
 
     <main id="main">
-      
-    
         <section class="post wrapper">
-          <h1><a href="/overkyll-jekyll-theme/2017/02/09/welcome-to-jekyll.html">Welcome to the overkyll jekyll theme</a></h1>
-          <p class="post-meta">09/02/2017</p>
-          <p>Very minimal starter theme for Jekyll.</p>
+            <h1><a href="/overkyll-jekyll-theme/2017/02/09/welcome-to-jekyll.html">Welcome to the overkyll jekyll theme</a></h1>
+            <p class="post-meta">09/02/2017</p>
+            <p>Very minimal starter theme for Jekyll.</p>
         
             <h2 id="overkyll-jekyll-theme">Overkyll jekyll theme</h2>
             
@@ -147,14 +145,14 @@ tags_summary:
             <p>It implements this differents technologies :</p>
             
             <ol>
-              <li><a href="http://itcss.io/">ITCSS</a> architecture.</li>
-              <li><a href="http://www.modularscale.com/">Modular scale</a> typography</li>
-              <li><a href="http://bjork24.github.io/Unison/">Unison JS</a> Unifying named breakpoints across CSS, JS, and HTML</li>
-              <li><a href="https://jaicab.com/localFont/">LocalFont</a> Implement localStorage web font caching in seconds</li>
-              <li><a href="https://github.com/filamentgroup/loadCSS">LoadingCSS</a> A function for loading CSS asynchronously</li>
-              <li><a href="http://overpassfont.org/">Overpass</a> An open source webfont family inspired by Highway Gothic</li>
-              <li><a href="https://yeun.github.io/open-color/">Open Color</a> Color optimized for UI like font, background, border, etc.</li>
-              <li><a href="https://fvsch.com/code/css-locks/">Css lock</a> Progressive increasing fontsize - in canal and river navigation</li>
+                <li><a href="http://itcss.io/">ITCSS</a> architecture.</li>
+                <li><a href="http://www.modularscale.com/">Modular scale</a> typography</li>
+                <li><a href="http://bjork24.github.io/Unison/">Unison JS</a> Unifying named breakpoints across CSS, JS, and HTML</li>
+                <li><a href="https://jaicab.com/localFont/">LocalFont</a> Implement localStorage web font caching in seconds</li>
+                <li><a href="https://github.com/filamentgroup/loadCSS">LoadingCSS</a> A function for loading CSS asynchronously</li>
+                <li><a href="http://overpassfont.org/">Overpass</a> An open source webfont family inspired by Highway Gothic</li>
+                <li><a href="https://yeun.github.io/open-color/">Open Color</a> Color optimized for UI like font, background, border, etc.</li>
+                <li><a href="https://fvsch.com/code/css-locks/">Css lock</a> Progressive increasing fontsize - in canal and river navigation</li>
             </ol>
             
             <p>An Archive page list all the posts by year.</p>
@@ -165,7 +163,6 @@ tags_summary:
         
         
         </section>
-    
     </main>
     <script src=/overkyll-jekyll-theme/assets/js/instantclick.min.js  data-no-instant></script>
     <script data-no-instant>
