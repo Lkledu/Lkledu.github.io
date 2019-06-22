@@ -117,32 +117,32 @@ Licensed MIT
     <div class="skip-links">
   <a href="#main">Contenu principal</a>
 </div>
-<header class="site-header" role="banner">
-  <div class="site-header-top site-header-top__align wrapper">
-      <p class="site-logo">
-        <a class="site-title" href="/overkyll-jekyll-theme/">Overkyll</a>
-      </p>
-
-      <nav class="nav-main nav-main__scroll" role="navigation">
-        <ul>
-          
-            
-            <li><a class="page-link" href="/overkyll-jekyll-theme/about.html">About</a></li>
-            
-          
-            
-            <li><a class="page-link" href="/overkyll-jekyll-theme/archives.html">Archives</a></li>
-            
-          
-            
-          
-            
-          
-        </ul>
-      </nav>
-  </div>
-
-</header>
+    <header class="site-header" role="banner">
+      <div class="site-header-top site-header-top__align wrapper">
+          <p class="site-logo">
+            <a class="site-title" href="/overkyll-jekyll-theme/">Overkyll</a>
+          </p>
+    
+          <nav class="nav-main nav-main__scroll" role="navigation">
+            <ul>
+              
+                
+                <li><a class="page-link" href="/overkyll-jekyll-theme/about.html">About</a></li>
+                
+              
+                
+                <li><a class="page-link" href="/overkyll-jekyll-theme/archives.html">Archives</a></li>
+                
+              
+                
+              
+                
+              
+            </ul>
+          </nav>
+      </div>
+    
+    </header>
 
 
     <main id="main">
