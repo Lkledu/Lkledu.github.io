@@ -645,6 +645,7 @@ layout: home
             [c]2015 @scottjehl, Filament Group, Inc.
             Licensed MIT
             */
+            
             (function(w){
             "use strict";
             /* exported loadCSS */
@@ -741,8 +742,6 @@ layout: home
         
         <main id="main">
             <section class="post wrapper">
-                <h1><a href="/overkyll-jekyll-theme/2017/02/09/welcome-to-jekyll.html">Welcome to the overkyll jekyll theme</a></h1>
-                <p class="post-meta">09/02/2017</p>
                 <p>Very minimal starter theme for Jekyll.</p>
                 
                 <h2 id="overkyll-jekyll-theme">Overkyll jekyll theme</h2>
