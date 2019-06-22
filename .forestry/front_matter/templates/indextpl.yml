@@ -7,3 +7,5 @@ fields:
   default: []
   label: Summary
   description: List of Categories
+pages:
+- index.md
