@@ -10,7 +10,7 @@ title:       'Lkledu.io'
 email:       'lkledu@gmail.com'
 description: 'Blog about dev and programming games'
 baseurl:     '/' # The subpath of your site, e.g. /blog
-url:         '/' # The base hostname & protocol for your site
+url:         'lkledu.github.io' # The base hostname & protocol for your site
 twitter:     ''
 github:      ''
 instagram:   ''
