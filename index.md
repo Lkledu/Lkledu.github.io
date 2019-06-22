@@ -20,8 +20,14 @@ layout: home
         
         <style type="text/css">
         
-            @media screen and (min-width: 0){head{font-family:"usn-small 0"}
-            body:after{content:"usn-small - min-width: 0"}}
+            @media screen and (min-width: 0){
+                head{
+                    font-family:"usn-small 0"
+                }
+                body:after{
+                    content:"usn-small - min-width: 0"
+                }
+            }
             
             @media screen and (min-width: 56.25em){
                 head{
