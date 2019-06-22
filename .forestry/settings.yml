@@ -1,7 +1,7 @@
 ---
 new_page_extension: md
 auto_deploy: true
-admin_path: 
+admin_path: _adminForestry
 webhook_url: 
 sections:
 - type: jekyll-pages
