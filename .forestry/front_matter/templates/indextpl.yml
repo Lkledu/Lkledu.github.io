@@ -13,5 +13,15 @@ fields:
   default: []
   label: Summary
   description: List of Categories
+- name: intro
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Intro
+  description: text introduction
 pages:
 - index.md
