@@ -106,7 +106,7 @@ tags_summary:
   </script>
   <noscript><link rel="stylesheet" href="/overkyll-jekyll-theme/assets/css/main.css"></noscript>
 
-<meta name="theme-color" content="#000">
+  <meta name="theme-color" content="#000">
 
 </head>
 
