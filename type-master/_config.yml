@@ -6,11 +6,11 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title:       'Lkledu.io'
-email:       'lkledu@gmail.com'
+title:       Type
+email:       ''
 description: ''
 baseurl:     '' # The subpath of your site, e.g. /blog
-url:         '' # The base hostname & protocol for your site
+url:         'https://type-jekyll.aspirethemes.com/' # The base hostname & protocol for your site
 twitter:     ''
 github:      ''
 instagram:   ''
