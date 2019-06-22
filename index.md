@@ -16,8 +16,6 @@ tags_summary:
 - 3D model
 ---
 
-
-<!DOCTYPE html>
 <html lang="en">
 
   <head itemscope itemtype="http://schema.org/WebSite">
