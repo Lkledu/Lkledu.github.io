@@ -1,5 +1,8 @@
 ---
+
+title: Home
 layout: home
+
 tags_summary:
 - C#
 - C++
