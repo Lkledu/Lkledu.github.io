@@ -3,17 +3,6 @@
 title: Home
 layout: home
 
-tags_summary:
-- C#
-- C++
-- Angular
-- Unity
-- Math
-- Data-Structure
-- Algorithm
-- Java
-- Database
-- 3D model
 ---
 
 <html lang="en">
