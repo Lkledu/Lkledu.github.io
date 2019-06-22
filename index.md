@@ -115,8 +115,9 @@ Licensed MIT
   <body class="page" itemscope itemtype="http://schema.org/WebPage">
 
     <div class="skip-links">
-  <a href="#main">Contenu principal</a>
-</div>
+        <a href="#main">Contenu principal</a>
+    </div>
+    
     <header class="site-header" role="banner">
       <div class="site-header-top site-header-top__align wrapper">
           <p class="site-logo">
