@@ -16,9 +16,6 @@ tags_summary:
 - 3D model
 ---
 
-Teste..
-Blog onde escrevo sobre meus projetos e oque estou estudando
-
 
 <!DOCTYPE html>
 <html lang="en">
