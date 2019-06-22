@@ -25,10 +25,12 @@ Blog onde escrevo sobre meus projetos e oque estou estudando
         <title>Lkledu.io</title>
     </head>
     <body>
+        <header></header>
         <ul>
         {% for item in page.tags_summary%}
         <li>{{item}}</li>
         {% endfor %}
         </ul>
+        <footer></footer>
     </body>
 </html>
