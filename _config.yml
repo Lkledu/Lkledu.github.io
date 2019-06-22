@@ -12,7 +12,7 @@ description: 'Blog about dev and programming games'
 baseurl:     '/' # The subpath of your site, e.g. /blog
 url:         'lkledu.github.io' # The base hostname & protocol for your site
 twitter:     ''
-github:      ''
+github:      'Lkledu'
 instagram:   ''
 facebook:    ''
 
