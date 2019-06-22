@@ -2,6 +2,12 @@
 label: IndexTPL
 hide_body: false
 fields:
+- name: image
+  type: file
+  config:
+    maxSize: 250
+  label: Image
+  description: Image with logo
 - name: tags_summary
   type: tag_list
   default: []
