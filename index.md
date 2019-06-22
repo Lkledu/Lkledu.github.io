@@ -725,7 +725,7 @@ layout: home
         <header class="site-header" role="banner">
             <div class="site-header-top site-header-top__align wrapper">
                 <p class="site-logo">
-                    <a class="site-title" href="/overkyll-jekyll-theme/">Lkledu.io</a>
+                    <a class="site-title" href="/">Lkledu.io</a>
                 </p>
                 
                 <nav class="nav-main nav-main__scroll" role="navigation">
