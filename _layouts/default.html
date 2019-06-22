@@ -1,0 +1,74 @@
+---
+#layout: compress
+---
+
+{%- assign lang = page.lang | default: site.lang | default: "en-US" | replace: '_', '-' -%}
+{%- assign lang_base = lang | split: '-' | first  | downcase -%}
+{%- assign t = site.data.locales[lang] | default: site.data.locales['en-US'] -%}
+
+{%- comment -%}
+{%- if lang_base == 'zh' -%}
+{%- assign lang_attribute = lang -%}
+{%- else -%}
+{%- assign lang_attribute = lang_base -%}
+{%- endif -%}
+{%- endcomment -%}
+
+<!DOCTYPE html>
+<html lang="{{ lang }}" {% if page.speech_synthesis_lang %}data-speech-synthesis-lang="{{ page.speech_synthesis_lang }}"{% endif %}>
+{%- include partials/head.html -%}
+<body {% if page.body.class %}class="{{ page.body.class }}"{% endif %}>
+
+  {%- include modules/page/google-adsense-ad.html -%}
+
+  <div class="fixed-ad-beside">
+
+    {%- include modules/page/header.html -%}
+
+    <main class="container-fluid animated fadeInRight py-3">
+      <div class="row clearfix">
+
+        {%- if page.sidebar.modules and page.sidebar.modules.size > 0 -%}
+        <div id="sidebar" class="col collapse {{ page.sidebar.extra_class | default: 'col-sm-4 col-md-4 col-lg-3 col-xl-2 order-2 pl-0' }}">
+          <div class="sticky-top">
+            {%- for path in page.sidebar.modules -%}
+            {%- include {{ path }} class="mb-1" -%}
+            {%- endfor -%}
+          </div>
+        </div>
+        {%- endif -%}
+
+        <div class="col">
+          <span id="top"></span>
+
+          {{ content }}
+
+          {%- comment -%}<small>environment:{{ jekyll.environment }} defaults:{{ page.defaults }} features:{{ page.features | inspect }}</small>{%- endcomment -%}
+          {%- comment -%}
+          ||id:{{page.id}}
+          ||path:{{page.path}}
+          ||pages:{{ site.pages | where_exp: 'item', 'item.layout != nil' | map: 'path' | join: ', ' }}
+          ||docs:{{ site.documents | map: 'path' | join: ', ' }}
+          | category:{{page.category | jsonify}} | categories:{{page.categories | jsonify}}
+          {%- endcomment -%}
+
+        </div>
+
+      </div>
+    </main>
+
+    {%- include modules/page/footer.html -%}
+
+  </div>
+
+  {%- include modules/modals/nav-modal.html -%}
+  {%- include modules/modals/settings-modal.html -%}
+
+  {%- if criticalcss.size > 0 -%}
+  {%- include partials/styles.html -%}
+  {%- endif -%}
+
+  {%- include partials/scripts.html -%}
+
+</body>
+</html>

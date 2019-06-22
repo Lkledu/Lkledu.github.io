@@ -1,0 +1,61 @@
+// Hide images until they are fully loaded
+// fade image in after load
+
+.lazyload,
+.lazyloading {
+  min-height: 200px;
+  opacity: 0;
+}
+
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+// fade image in while loading and show a spinner as background image (good for progressive images)
+//.lazyload {
+//  opacity: 0;
+//}
+
+//.lazyloading {
+//  opacity: 1;
+//  transition: opacity 300ms;
+//  //background: #f7f7f7 url(loader.gif) no-repeat center;
+//}
+
+// Minimizing reflows and avoiding page jumps
+.ratio-container {
+  overflow: hidden;
+  position: relative;
+
+  > * {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+// 16:9 = 56.25% = calc(9 / 16 * 100%)
+.ratio-container::after {
+  content: '';
+  display: block;
+  height: 0;
+  padding-bottom: 56.25%;
+  width: 100%;
+}
+
+// unknown ration variation
+.unknown-ratio-container > * {
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+}
+
+// Parent fit extension
+[data-sizes="auto"] {
+  display: block;
+  width: 100%;
+}

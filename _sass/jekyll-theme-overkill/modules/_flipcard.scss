@@ -1,0 +1,55 @@
+.flipcard {
+
+  background: none;
+  border: 0;
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+  transition: transform 300ms;
+  transition-timing-function: linear;
+
+  .card {
+    -webkit-font-smoothing: subpixel-antialiased;
+    height: 100%;
+    margin: 0;
+  }
+
+  .card-position-absolute {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    .card-footer {
+      bottom: 0;
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+  .front-face {
+    z-index: initial;
+  }
+
+  .back-face {
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    z-index: -1;
+  }
+
+  [type="radio"]:checked + &,
+  [type="checkbox"]:checked + & {
+    transform: rotateY(-180deg) translateZ(0);
+    z-index: $zindex-dropdown;
+
+    .front-face {
+      backface-visibility: hidden;
+      z-index: -1;
+    }
+
+    .back-face {
+      backface-visibility: inherit;
+      z-index: inherit;
+    }
+  }
+
+}

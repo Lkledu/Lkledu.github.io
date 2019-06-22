@@ -1,0 +1,25 @@
+{%- if page.article_footer.modules and page.article_footer.modules.first -%}
+<footer>
+
+  {%- for path in page.article_footer.modules -%}
+  {%- include {{ path }} class="mb-1" -%}
+  {%- endfor -%}
+
+  {%- comment -%}
+  {%- assign config = page.features -%}
+
+  {%- if config.metas != false and config.metas_position == 'footer' -%}
+    {%- include modules/article/metas.html container_class="list-inline small text-muted" item_class="list-inline-item" -%}
+  {%- endif -%}
+
+  {%- if config.author-box != false -%}
+    {%- include modules/article/author-box.html -%}
+  {%- endif -%}
+
+  {%- if config.disqus != false and site.disqus.shortname -%}
+    {%- include modules/article/disqus-comments.html -%}
+  {%- endif -%}
+  {%- endcomment -%}
+
+</footer>
+{%- endif -%}

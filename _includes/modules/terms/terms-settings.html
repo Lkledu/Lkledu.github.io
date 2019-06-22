@@ -1,0 +1,20 @@
+<div class="card mb-3">
+  <div class="card-header d-none d-xl-block"><i class="fas fa-cogs fa-fw fa-lg text-muted mr-3"></i>{{ t.options }}</div>
+  <div class="card-body">
+    <form aria-label="{{ t.options }}">
+
+      <div class="form-group mb-0">
+        <label>{{ t.shuffle }}</label>
+        <div class="btn-group btn-group-toggle btn-group-sm w-20 float-right" data-toggle="buttons">
+          <label class="btn btn-secondary btn-switch active w-50">
+            <input type="radio" name="randomize" value="0" autocomplete="off" checked data-local-storage-namespace="{{ page.url }}" />{{ t.switch_off }}
+          </label>
+          <label class="btn btn-primary btn-switch w-50">
+            <input type="radio" name="randomize" value="1" autocomplete="off" data-local-storage-namespace="{{ page.url }}" />{{ t.switch_on }}
+          </label>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</div>

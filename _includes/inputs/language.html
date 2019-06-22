@@ -1,0 +1,30 @@
+
+{%- assign translation_ref = page.translation_ref -%}
+
+{%- if translation_ref -%}
+{%- assign translations = site.documents | concat: site.pages -%}
+{%- assign translations = translations | where_exp: 'item', 'item.translation_ref == translation_ref' | sort: 'lang' -%}
+{%- else -%}
+{%- assign translations = '' | split: ' ' | push: page -%}
+{%- endif -%}
+
+{%- assign disabled = '' -%}
+{%- if translations.size <= 1 -%}
+{%- assign disabled = 'disabled' -%}
+{%- endif -%}
+
+<select id="language" class="form-control" placeholder="{{ t.language }}" data-local-storage="false" {{ include.attributes | default: 'onchange="location = this.value;"' }} {{ disabled }} >
+{%- for doc in translations -%}
+
+{%- assign language_base = doc.lang | split: '-' | first -%}
+{%- assign text = site.data.languages[doc.lang] | default: site.data.languages[language_base] | default: doc.lang -%}
+
+{%- assign selected = '' -%}
+{%- if doc.url == page.url -%}
+{%- assign selected = 'selected' -%}
+{%- endif -%}
+
+<option name="{{ language }}" value="{{ doc.url | relative_url }}" {{ selected }}>{{ text }}</option>
+
+{%- endfor -%}
+</select>

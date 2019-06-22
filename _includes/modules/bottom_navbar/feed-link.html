@@ -1,0 +1,10 @@
+
+{%- assign config = page.feed_link -%}
+{%- assign target = '/feed.xml' | relative_url -%}
+{%- assign text = config.text.text | default: t.feed -%}
+{%- assign title = config.title | default: t.feed -%}
+{%- assign class = config.class | default: 'btn btn-secondary' | append: page.bottom_navbar.button.extra_class -%}
+{%- assign icon_class = config.icon.class | default: 'fa-rss' | append: page.bottom_navbar.icon.extra_class -%}
+
+{%- if config.visibility != false -%}{%- endif -%}
+{%- include bootstrap-components/link.html element=page.bottom_navbar.button.element target=target text=text title=title class=class icon_class=icon_class text_class=config.text.class -%}

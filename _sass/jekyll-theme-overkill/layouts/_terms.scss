@@ -1,0 +1,227 @@
+.terms {
+  perspective: 50000px;
+}
+
+.term.flipcard {
+  [type='radio']:checked ~ &,
+  [type='checkbox']:checked ~ & {
+    transform: rotateY(-180deg) scale(1.25);
+  }
+
+  .card {
+    //min-height: 8rem;
+    //min-width: 8rem;
+    min-height: 12rem;
+    min-width: 12rem;
+    overflow: hidden;
+
+    .card-body {
+      //-moz-user-select: none;
+      //-ms-user-select: none;
+      //-o-user-select: none;
+      //-webkit-user-select: none;
+      user-select: none;
+    }
+  }
+
+  .card-body {
+    max-width: 25.9rem;
+    word-break: break-word;
+    word-wrap: break-word;
+  }
+
+  .front-face {
+    //.card-title {
+    //  white-space: nowrap;
+    //}
+    .card-title small {
+      display: block;
+    }
+    // Question / Success sign as background
+    &::before {
+      //content:'\e0b0'; // iconic
+      //font-family: 'Icons';
+      //content: '\f128'; // font-awesome
+      //content: url(../node_modules/font-awesome/advanced-options/raw-svg/solid/question.svg);
+      content: url('data:image/svg+xml;charset=UTF-8,%3csvg xmlns="http://www.w3.org/2000/svg" height="8rem" viewBox="0 0 384 512"%3e%3cpath d="M202.021 0C122.202 0 70.503 32.703 29.914 91.026c-7.363 10.58-5.093 25.086 5.178 32.874l43.138 32.709c10.373 7.865 25.132 6.026 33.253-4.148 25.049-31.381 43.63-49.449 82.757-49.449 30.764 0 68.816 19.799 68.816 49.631 0 22.552-18.617 34.134-48.993 51.164-35.423 19.86-82.299 44.576-82.299 106.405V320c0 13.255 10.745 24 24 24h72.471c13.255 0 24-10.745 24-24v-5.773c0-42.86 125.268-44.645 125.268-160.627C377.504 66.256 286.902 0 202.021 0zM192 373.459c-38.196 0-69.271 31.075-69.271 69.271 0 38.195 31.075 69.27 69.271 69.27s69.271-31.075 69.271-69.271-31.075-69.27-69.271-69.27z"/%3e%3c/svg%3e');
+    }
+
+    &.bg-success::before {
+      //content:'\e033'; // iconic
+      //content: '\f00c'; // font-awesome
+      //content: url(../node_modules/font-awesome/advanced-options/raw-svg/solid/check.svg);
+      content: url('data:image/svg+xml;charset=UTF-8,%3csvg xmlns="http://www.w3.org/2000/svg" height="8rem" viewBox="0 0 512 512"%3e%3cpath d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/%3e%3c/svg%3e');
+    }
+  }
+
+  .back-face {
+    //.nav {
+    //  margin-top: -$card-spacer-y;
+    //}
+    //.nav-link {
+    //  padding: ($spacer * .25);
+    //}
+    .card-text {
+      //font-size: 150%;
+      //line-height: 1.2;
+      font-size: $font-size-lg;
+      line-height: $line-height-lg;
+
+      em {
+        display: block;
+        font-size: $font-size-sm;
+        line-height: $line-height-sm;
+        margin-left: .5rem;
+        margin-top: .5rem;
+      }
+
+      ol,
+      ul {
+        padding-left: 0;
+      }
+    }
+
+    .btn.active {
+      //display: none;
+      .fa-check {
+        color: $success;
+      }
+
+      .fa-times {
+        color: $danger;
+      }
+    }
+
+    .btn.focus,
+    .btn:focus {
+      box-shadow: none;
+    }
+  }
+
+  .card-section {
+    width: 12rem;
+    word-break: break-word;
+    word-wrap: break-word;
+
+    &.front-face::before {
+      //content: '\f129';
+      //content: url(../node_modules/font-awesome/advanced-options/raw-svg/solid/info.svg);
+      content: url('data:image/svg+xml;charset=UTF-8,%3csvg xmlns="http://www.w3.org/2000/svg" height="8rem" viewBox="0 0 192 512"%3e%3cpath d="M20 424.229h20V279.771H20c-11.046 0-20-8.954-20-20V212c0-11.046 8.954-20 20-20h112c11.046 0 20 8.954 20 20v212.229h20c11.046 0 20 8.954 20 20V492c0 11.046-8.954 20-20 20H20c-11.046 0-20-8.954-20-20v-47.771c0-11.046 8.954-20 20-20zM96 0C56.235 0 24 32.235 24 72s32.235 72 72 72 72-32.235 72-72S135.764 0 96 0z"/%3e%3c/svg%3e');
+    }
+  }
+
+  abbr[class*='text-'] {
+    .card-text &,
+    .card-title & {
+      //cursor: inherit !important;
+      border-bottom: 0; //important
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      text-decoration: none; //important
+      top: -.5em;
+      vertical-align: baseline;
+
+      .nav-link:not(.active) & {
+        color: $text-muted; //important
+      }
+    }
+  }
+
+  .text-pronunciation {
+    //color: $primary;
+    font-weight: 800;
+  }
+  //.text-pronunciation::before {
+  //  //content: '/';
+  //  //content: 'Prononciation';
+  //  content: 'Pron.';
+  //}
+  .text-pronunciation::after {
+    //content: '/';
+    //content: '\201d'; // ”
+  }
+
+  .text-literatim {
+    //color: $secondary;
+    font-weight: 100;
+  }
+  //.text-literatim::before {
+  //  //content: '\201c'; // “
+  //  //content: 'Litt\e9ralement';
+  //  content: 'Litt.';
+  //}
+  .text-literatim::after {
+    //content: '\201d'; // ”
+  }
+
+  .text-literatim,
+  .text-pronunciation {
+    //font-weight: bold;
+    color: $text-muted;
+    display: block;
+    font-style: italic;
+    line-height: 1rem;
+  }
+
+  .text-literatim::after,
+  .text-literatim::before,
+  .text-pronunciation::after,
+  .text-pronunciation::before {
+    //color: $gray-400;
+    //min-width: .75rem;
+    display: inline-block;
+    font-weight: 100;
+    margin-right: .25rem;
+    min-width: 2rem;
+    width: fit-content;
+  }
+
+  .text-literatim::before,
+  .text-pronunciation::before {
+    text-align: left;
+  }
+
+  .text-literatim::after,
+  .text-pronunciation::after {
+    text-align: right;
+  }
+
+  .text-m,
+  .text-male {
+    color: color('blue');
+    text-decoration-color: color('blue');
+  }
+
+  .text-f,
+  .text-female {
+    color: color('pink');
+    text-decoration-color: color('pink');
+  }
+
+  .text-n,
+  .text-neutral {
+    color: color('gray');
+    text-decoration-color: color('gray');
+  }
+
+  .text-pl,
+  .text-plural {
+    color: color('yellow');
+    text-decoration-color: color('yellow');
+  }
+
+  .text-abbreviation,
+  .text-abr,
+  .text-fam,
+  .text-familiar {
+    color: color('orange');
+    text-decoration-color: color('orange');
+  }
+
+  .text-slang,
+  .text-vul {
+    color: color('red');
+    text-decoration-color: color('red');
+  }
+}

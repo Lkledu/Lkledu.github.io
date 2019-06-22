@@ -1,0 +1,26 @@
+
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, $white, 50%)) {
+
+  ::-webkit-scrollbar {
+    height: $size;
+    width: $size;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: $background-color;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+  }
+
+  body {
+    -ms-scrollbar-face-color: $foreground-color;
+    -ms-scrollbar-track-color: $background-color;
+  }
+
+  html {
+    overflow-y: scroll;
+  }
+
+}

@@ -1,0 +1,153 @@
+---
+layout: default
+---
+
+{%- assign content = page.content | strip_newlines -%}
+
+{%- if page.collection and page.slug -%}
+{%- assign posts = site[page.collection] | where_exp: 'item', 'item[page.collection] contains page.slug' -%}
+
+{%- if page.related_collections.size > 0%}
+{%- assign related_collections = '' | split: ' ' -%}
+{%- for type in page.related_collections -%}
+{%- assign related_posts = site[type] | where_exp: 'item', 'item[page.collection] contains page.slug' -%}
+{%- assign related_collections = related_collections | push: related_posts -%}
+{%- endfor -%}
+{%- endif -%}
+
+{%- endif -%}
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+    {%- include modules/article/header.html -%}
+
+    <div>
+
+        <div class="container-fluid">
+            <div class="post-content" itemprop="articleBody">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item"><a class="nav-link active" id="overview-tab" href="#overview" role="tab" data-toggle="tab">Overview</a></li>
+                    {%- if page.related_collections.size > 0 -%}
+                    {%- for type in page.related_collections -%}
+                    {%- if related_collections[forloop.index0].size > 0 -%}
+                    {%- assign collection = site.collections | where: 'label', type | first -%}
+                    <li class="nav-item"><a class="nav-link" id="{{ type }}-tab" href="#{{ type }}" role="tab" data-toggle="tab">{{ collection.title }}</a></li>
+                    {%- endif -%}
+                    {%- endfor -%}
+                    {%- endif -%}
+                    {%- if page.wiki -%}<li class="nav-item"><a class="nav-link" id="wiki-tab" href="#wiki" role="tab" data-toggle="tab">Wiki</a></li>{%- endif -%}
+                    {%- if content != '' -%}<li class="nav-item"><a class="nav-link" id="tips-tab" href="#tips" role="tab" data-toggle="tab">Tips</a></li>{%- endif -%}
+                    {%- if page.features.comments -%}<li class="nav-item"><a class="nav-link" id="comments-tab" href="#comments" role="tab" data-toggle="tab">{%- include disqus-comment-count.html -%}</a></li>{%- endif -%}
+                    <li class="nav-item pull-right contribute"><a class="nav-link" id="contribution-tab" href="#contribution" role="tab" data-toggle="tab">More</a></li>
+                </ul>
+                <div class="tab-content">
+
+                    <div id="overview" class="tab-pane fade show active" role="tabpanel" aria-labelledby="overview-tab">
+                        <div class="row">
+                            <div class="col-md-4 pull-right">
+
+                                {%- if page.dealers.size > 0 -%}
+                                <form class="form-inline" data-persist="garlic">
+                                    <div class="form-group">
+                                        <label for="user_country_code" class="hidden">Website</label>
+                                        <select id="user_country_code" class="form-control input-sm select2" placeholder="Website" title="Some dealers have multiple local websites. Display the approprate link.">
+                                            {%- comment -%}{%- include select-options-country.html -%}{%- endcomment -%}
+                                        </select>
+                                        <span class="help-block"></span>
+                                    </div>
+                                </form>
+                                {%- endif -%}
+
+                                <ul class="nav nav-pills nav-stacked text-lg">
+                                    {%- if page.website -%}<li class="nav-item"><a class="nav-link" href="{{ page.website }}" target="_blank"><span class="fas fas-globe"></span> Official website</a></li>{%- endif -%}
+                                    {%- if page.shop -%}<li class="nav-item"><a class="nav-link" href="{{ page.shop }}" target="_blank"><span class="fas fas-shopping-cart"></span> Official shop</a></li>{%- endif -%}
+                                    {%- if page.store_finder -%}<li class="nav-item"><a class="nav-link" href="{{ page.store_finder }}" target="_blank"><span class="fas fas fas-map-marker"></span> Store finder</a></li>{%- endif -%}
+                                    {%- if page.about -%}<li class="nav-item"><a class="nav-link" href="{{ page.about }}" target="_blank"><span class="fas fas-info"></span> About</a></li>{%- endif -%}
+
+                                    {%- if page.collection == 'products' and page.dealers.size > 0 -%}
+                                    {%- for url in page.dealers -%}
+                                    {%- assign array = url | split: '/' -%}
+                                    {%- assign domain = array[2] | replace: 'www.', '' -%}
+                                    <li class="nav-item"><a class="nav-link dealer" href="{{ url }}" target="_blank">{{ domain }}</a></li>
+                                    {%- endfor -%}
+                                    {%- endif -%}
+
+                                </ul>
+                                <br/>
+
+                                {%- comment -%}
+                                {%- if page.collection == 'products' -%}
+                                {%- include modules/product/dealer-links.html title='Dealers' -%}
+                                {%- endif -%}
+                                {%- endcomment -%}
+                                <ul class="list-unstyled">
+                                    {% for url in post.dealers %}
+                                    {% assign array = url | split: '/' %}
+                                    {% assign domain = array[2] | replace: 'www.', '' %}
+                                    <li><a class="dealer" href="{{ url }}" target="_blank">{{ domain }}</a></li>
+                                    {% endfor %}
+                                </ul>
+
+                            </div>
+                            <div class="col-md-8">
+
+                                <div class="mediawiki-excerpt">
+                                </div>
+
+                                {%- include partials/article-pros-cons.html -%}
+
+                                {%- if posts.size > 0 -%}
+                                {%- assign collection = site.collections[page.collection] -%}
+                                <h3>{{ collection.title }}</h3>
+                                {%- include collection-list.html posts=posts -%}
+                                {%- endif -%}
+
+                            </div>
+                        </div>
+                    </div>
+
+                    {%- if page.related_collections.size > 0 -%}
+                    {%- for type in page.related_collections -%}
+                    {%- if related_collections[forloop.index0].size > 0 -%}
+                    {%- assign related_posts = related_collections[forloop.index0] -%}
+                    <div id="{{ type }}" class="tab-pane fade" role="tabpanel" aria-labelledby="{{ type }}-tab">
+                        {%- include collection-list.html posts=related_posts type=type -%}
+                    </div>
+                    {%- endif -%}
+                    {%- endfor -%}
+                    {%- endif -%}
+
+                    {%- if page.wiki -%}
+                    <div id="wiki" class="tab-pane fade" role="tabpanel" aria-labelledby="wiki-tab">
+                        <div class="mediawiki-container clearfix" data-url="{{ page.wiki }}">
+                        </div>
+                        <p class="mediawiki-mention text-muted">From Wikipedia, The Free Encyclopedia. <a href="{{ page.wiki }}" target="_blank">{{ page.wiki }}</a></p>
+                    </div>
+                    {%- endif -%}
+
+                    {%- if content != '' -%}
+                    <div id="tips" class="tab-pane fade" role="tabpanel" aria-labelledby="tips-tab">
+                        {{ content }}
+                    </div>
+                    {%- endif -%}
+
+                    {%- comment -%}
+                    {%- if page.features.comments -%}
+                    <div id="comments" class="tab-pane fade" role="tabpanel" aria-labelledby="comments-tab">
+                        {%- include disqus-comments.html -%}
+                    </div>
+                    {%- endif -%}
+
+                    <div id="contribution" class="tab-pane fade" role="tabpanel" aria-labelledby="contribution-tab">
+                        {%- include article/contributor-guide.html query=page.title -%}
+                    </div>
+                    {%- endcomment -%}
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {%- include modules/article/footer.html -%}
+
+</article>

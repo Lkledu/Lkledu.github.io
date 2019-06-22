@@ -1,0 +1,81 @@
+
+{%- assign pages_url = site.pages | map: 'url' -%}
+{%- assign crumbs = page.url | split: '/' -%}
+
+{%- assign item_class = include.item_class | default: 'breadcrumb-item' -%}
+
+<nav aria-label="{{ t.breadcrumb }}">
+  <ol class="{{ include.class | default: 'breadcrumb' }}">
+
+    {%- if crumbs.size > 0 -%}
+
+    {%- if include.home != false -%}
+    {%- include helpers/local-document.html path='index.md' collection='pages' -%}
+    {%- assign link_href = url | default: '/' -%}
+    <li class="{{ item_class }}"><a class="text-truncate" href="{{ link_href | relative_url }}">{{ include.home | default: t.home }}</a></li>
+    {%- else -%}
+    <li class="{{ item_class }} active" aria-current="page">{{ include.home | default: t.home }}</li>
+    {%- endif -%}
+
+    {%- if page.collection -%}
+    {%- assign _page = site.pages | where_exp: 'item', 'item.document_list.collection == page.collection' | first -%}
+    {%- include helpers/related-documents.html page=_page -%}
+    {%- assign posts = return -%}
+    {%- if posts.size > 0 -%}
+    <li class="{{ item_class }}">
+      <div class="btn-group">
+        <a class="dropdown-toggle text-truncate" id="breadcrumb-item-related_posts-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="{{ t.related_posts }}">
+          {{ page.collection | strip | escape }}
+        </a>
+        <div class="dropdown-menu" aria-labelledby="breadcrumb-item-related_posts-dropdown">
+          {%- include bootstrap-components/dropdown-items.html posts=posts -%}
+        </div>
+      </div>
+    </li>
+    {%- else -%}
+    <li class="{{ item_class }}">{{ page.title | strip | escape }}</li>
+    {%- endif -%}
+    {%- endif -%}
+
+    {%- endif -%}
+
+    {%- for crumb in crumbs offset:1 -%}
+    {%- unless forloop.last -%}
+
+      {%- assign url_parts = '' | split: ' ' -%}
+      {%- for crumb in crumbs offset:1 limit:forloop.index -%}
+      {%- assign url_parts = url_parts | push: crumb -%}
+      {%- endfor -%}
+      {%- assign url = url_parts | join: '/' | prepend: '/' | append: '.html' -%}
+
+      {%- if pages_url contains url -%}
+      <li class="{{ item_class }}"><a class="text-truncate" href="{{ url | relative_url }}">{{ crumb | capitalize }}</a></li>
+      {%- endif -%}
+
+    {%- else -%}
+
+      {%- if include.related != false -%}
+        {%- include helpers/related-documents.html -%}
+        {%- assign posts = return -%}
+        {%- if posts.size > 0 -%}
+        <li class="{{ item_class }} active" aria-current="page">
+          <div class="btn-group">
+            <a class="dropdown-toggle text-truncate" id="breadcrumb-item-related_posts-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="{{ t.related_posts }}">
+              {{ page.title | strip | escape }}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="breadcrumb-item-related_posts-dropdown">
+              {%- include bootstrap-components/dropdown-items.html posts=posts -%}
+            </div>
+          </div>
+        </li>
+        {%- else -%}
+        <li class="{{ item_class }} active" aria-current="page">{{ page.title | strip | escape }}</li>
+        {%- endif -%}
+      {%- else -%}
+      <li class="{{ item_class }} active" aria-current="page">{{ page.title | strip | escape }}</li>
+      {%- endif -%}
+
+    {%- endunless -%}
+    {%- endfor -%}
+  </ol>
+</nav>

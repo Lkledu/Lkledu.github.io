@@ -1,0 +1,65 @@
+{%- assign array = '' | split: ' ' -%}
+
+{%- assign _page = include.page | default: page -%}
+{%- assign _collection = include.collection | default: _page.collection -%}
+{%- assign _keys = 'collection layout lang categories' | split: ' ' -%}
+{%- assign _keys = include.keys | default: _keys -%}
+{%- assign _selected_documents = array -%}
+
+{%- if site[_collection] -%}
+{%- assign _documents = site[_collection] -%}
+{%- else -%}
+{%- assign _documents = site.documents | where_exp: 'item', 'item.layout != nil' -%}
+{%- endif -%}
+
+{%- comment -%}
+{%- for _key in _keys -%}
+{{ _key }}={{ include[_key] | default: _page[_key] }},
+{%- endfor -%}
+{%- endcomment -%}
+
+{%- if _documents.first -%}
+{%- for _document in _documents -%}
+
+{%- assign _match = true -%}
+
+{%- for _key in _keys -%}
+{%- comment -%}|include[{{_key}}]={{include[_key]|jsonify}};page[{{_key}}]={{_page[_key]|jsonify}}{%- endcomment -%}
+{%- assign _good_value = include[_key] | default: _page[_key] -%}
+{%- assign _value = _document[_key] -%}
+{%- comment -%}{%- if _key == 'collection' and _good_value == 'pages' -%}{%- assign _good_value = nil -%}{%- endif -%}{%- endcomment -%}
+
+{%- if _good_value and _value.first and _good_value.first -%}
+{%- assign _good_value = _good_value | compact | uniq -%}
+{%- if _value.size == _good_value.size -%}
+{%- assign _values = _value | concat: _good_value | compact | uniq -%}
+{%- if _values.size != _good_value.size -%}
+{%- assign _match = false -%}
+{%- endif -%}
+{%- else -%}
+{%- assign _match = false -%}
+{%- endif -%}
+{%- elsif _good_value and _value != _good_value -%}
+{%- assign _match = false -%}
+{%- endif -%}
+
+{%- comment -%}|{{_key}}={{_value|jsonify}}/{{_good_value|jsonify}}({{_match|jsonify}}){%- endcomment -%}
+{%- endfor -%}
+
+{%- if _match == true and _document.path != _page.path -%}
+{%- comment -%}|{{_document.path}}/{{_page.path}};match:{{_match|jsonify}};title:{{_document.title}}{%- endcomment -%}
+{%- assign _selected_documents = _selected_documents | push: _document -%}
+{%- endif -%}
+
+{%- endfor -%}
+
+{%- comment -%}{%- endcomment -%}
+{%- if include.limit -%}
+{%- assign _selected_documents = _selected_documents | limit: include.limit -%}
+{%- endif -%}
+
+{%- endif -%}
+
+{%- comment -%}posts:{{ _selected_documents | map: 'path' | jsonify }}{%- endcomment -%}
+
+{%- assign return = _selected_documents -%}

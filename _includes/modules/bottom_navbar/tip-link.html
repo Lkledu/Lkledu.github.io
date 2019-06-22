@@ -1,0 +1,15 @@
+{%- assign config = page.tip_link -%}
+
+{%- comment -%}
+{%- include helpers/local-document.html path='tips.md' collection='pages' -%}
+{%- capture target -%}{{ site.baseurl }}{% link doc.path | default: 'tips.md' %}{%- endcapture -%}
+{%- endcomment -%}
+
+{%- capture target -%}{{ site.baseurl }}{% link tips.md %}{%- endcapture -%}
+{%- assign target = config.target | default: target -%}
+{%- assign text = config.text.text | default: t.tips -%}
+{%- assign title = config.title | default: t.toggle_tips -%}
+{%- assign class = config.class | default: 'btn btn-secondary' | append: page.bottom_navbar.button.extra_class -%}
+{%- assign icon_class = config.icon.class | default: 'fa-question' | append: page.bottom_navbar.icon.extra_class -%}
+
+{%- include bootstrap-components/link.html element=page.bottom_navbar.button.element target=target text=text title=title class=class icon_class=icon_class text_class=config.text.class -%}

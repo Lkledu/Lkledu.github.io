@@ -1,44 +1,632 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
+baseurl: "/jekyll-theme-overkill" # the subpath of your site, e.g. /repo
+
+#theme: jekyll-theme-overkill
+theme: minima
+
+# https://pages.github.com/versions/
+plugins:
+ - jekyll-avatar
+ - jekyll-feed
+ - jekyll-github-metadata
+ - jekyll-seo-tag
+ - jekyll-sitemap
+ - jemoji
+ - kramdown
+ - rouge
+
+
+# ------------------------------------------------------------------------------
+# Custom path
+# ------------------------------------------------------------------------------
+
+# Jekyll files
+# source: demo
+
+# Compiled website
+# destination: demo/site
+
+sass:
+  #style: compressed
+  load_paths:
+    - _sass
+    - node_modules
+    - assets/node_modules
+
+
+# ------------------------------------------------------------------------------
+# Include / Exclude
+# ------------------------------------------------------------------------------
+
+# Do not compile html and markdown files, do not copy this files to the destination directory (_site) when running jekyll build
+exclude:
+  - "gulpfile.js"
+  - "package.json"
+  - "package-lock.json"
+  - ".yarnrc"
+  - ".travis.yml"
+  - "README.*"
+  - "AUTHORS.*"
+  - "LICENCE.*"
+  - "LICENSE"
+  - "CODE_OF_CONDUCT.*"
+  - "History.*"
+  - "screenshot.jpg"
+  - "screenshot.png"
+  - "bower.json"
+  - "Makefile"
+  - "Gemfile"
+  - "*.lock"
+  - "*.gem"
+  - "*.gemspec"
+  - node_modules/**/*.htm
+  - node_modules/**/*.html
+  - node_modules/**/*.md
+  - node_modules/**/*.markdown
+
+# Copy (jekyll defaults and previously) excluded files to the destination directory when running jekyll build
+include:
+  - node_modules/@fortawesome/fontawesome-free/js/*.min.js
+  - node_modules/animate.css/*.css
+  - node_modules/bootstrap/dist/js/*.min.js
+  - node_modules/bootstrap/scss
+  - node_modules/bootswatch/dist
+  - node_modules/cookieconsent/build
+  - node_modules/jquery/dist/*.min.js
+  - node_modules/jquery-mousewheel/*.js
+  - node_modules/lazysizes/*.min.js
+  - node_modules/lazysizes/plugins/aspectratio/*.min.js
+  - node_modules/lazysizes/plugins/parent-fit/*.min.js
+  - node_modules/lunr/*.js
+  - node_modules/lunr-languages/min
+  - node_modules/popper.js/dist/umd/*.min.js
+  - node_modules/select2/dist/js/*.min.js
+  - node_modules/select2/src/scss/*
+  - node_modules/select2-bootstrap4-theme/src
+
+
+# Do not delete/copy this (static) files from/to the destination directory each time you're running jekyll build (improve build time)
+keep_files:
+  - assets/images
+  - assets/sounds
+  - node_modules
+  - bower_components
+
+
+
+# ------------------------------------------------------------------------------
+# Collections
+# ------------------------------------------------------------------------------
+
+collections:
+  #categories:
+  #  output: true
+  #  title: "Categories"
+  #  permalink: /categories/:title
+  #tags:
+  #  output: true
+  #  title: "Tags"
+  #  permalink: /tags/:title
+  #alerts:
+  #  output: true
+  #  title: "Alerts"
+  #  #permalink: /alerts/:title
+  products:
+    output: true
+    title: "Products"
+    #permalink: /products/:title
+  brands:
+    output: false
+    title: "Brands"
+    #permalink: /brands/:title
+  tips:
+    output: false
+    title: "Tips"
+    #permalink: /tips/:title
+  terms:
+    output: true
+    title: "Terms"
+    #permalink: /terms/:title
+
+
+
+# ------------------------------------------------------------------------------
+# Defaults
+# ------------------------------------------------------------------------------
+
+defaults:
+  # Default config for all files
+  -
+    scope:
+      path: ""
+    values:
+      default0: 1
+      defaults: 1
+      #permalink: /:title
+      author: chrisbo246
+      publisher: chrisbo246
+      lang: en-US
+      image: assets/images/default.png
+      #date: 2017-01-01 00:00:00 +0100
+      plugins:
+        #animate_css: true
+        bootstrap: true
+        #cookie_consent: true
+        #font_awesome: true
+        #lazysizes: true
+        lunr: false
+        select2: false
+        #google_adsense: true
+        #google_analytics: true
+        #disqus: false
+      features:
+        ads: true
+        author: false
+        back_to_top: true
+        card: false
+        categories: true
+        comments: false
+        cookie_consent: true
+        date: false
+        document_list: false
+        ghpages_link: false
+        filters: false
+        flipcard: false
+        icons: true
+        index: false
+        lazyload: true
+        local_storage: true
+        multilingual: true
+        page_transition: true
+        selection: false
+        smooth_scroll: true
+        social_icons: false
+        sound_player: true
+        speech_synthesis: false
+        syntax_highlighting: false
+        tags: true
+        terms: false
+      ghpages_link:
+        class: 'navbar-toggler'
+        text:
+          class: 'text-hide'
+        icon:
+          class: 'fas fa-edit fa-lg fa-fw'
+      back_to_top_link:
+        #class: 'btn btn-outline-secondary position-fixed tooltip m-3'
+        text:
+          class: 'text-hide'
+        icon:
+          class: 'fas fa-chevron-up fa-lg fa-fw'
+      feed_link:
+        class: 'navbar-toggler'
+        text:
+          class: 'text-hide'
+        icon:
+          class: 'fas fa-rss fa-lg fa-fw'
+      tip_link:
+        class: 'navbar-toggler'
+        text:
+          class: 'text-hide'
+        icon:
+          class: 'fas fa-question fa-lg fa-fw'
+      comments_toggler:
+        class: 'navbar-toggler'
+        text:
+          class: 'text-hide'
+        icon:
+          class: 'fas fa-comments fa-lg fa-fw'
+      settings_toggler:
+        class: 'navbar-toggler'
+        text:
+          class: 'text-hide'
+        icon:
+          class: 'fas fa-cog fa-lg fa-fw'
+      top_navbar:
+        modules: ['modules/navbar/navbar-breadcrumb.html']
+        class: 'navbar navbar-dark bg-dark justify-content-between animated fadeInDown'
+        position: 'fixed-top'
+      bottom_navbar:
+        modules: ['modules/navbar/action_nav.html']
+        class: 'navbar navbar-light bg-light justify-content-between animated fadeInUp'
+        position: 'fixed-bottom'
+      action_nav:
+        modules: [modules/bottom_navbar/nav-toggler.html, modules/bottom_navbar/comments-toggler.html, modules/bottom_navbar/tip-link.html, modules/bottom_navbar/edit-on-github-link.html, modules/bottom_navbar/settings-toggler.html]
+        extra_class: 'navbar-nav nav-fill flex-row w-100'
+        button:
+          extra_class: 'nav-item px-2'
+        icon:
+          extra_class: 'fas fa-3x fa-lg fa-fw d-inline-block nav-link pb-0'
+        text:
+          extra_class: 'small text-uppercase nav-link pt-0'
+      article_header:
+        modules: [modules/article/alerts.html, modules/article/title.html]
+      article_footer:
+        modules: [modules/article/disqus-comments.html]
+      sidebar:
+        modules: [modules/sidebar/vertical-primary-nav.html]
+        extra_class: 'col-sm-4 col-md-4 col-lg-3 col-xl-2 order-2 pl-0'
+      filters:
+        modules: ['modules/filters/search-input.html', 'modules/filters/meta-filters.html']
+        keys: [categories, tags]
+        direction: 'vertical'
+      lunr:
+        ref: path
+        fields: [collection, title, categories, tags, author, description, content, pages, tips, brands]
+        storeName: lunrStore
+        #lang: [en, fr, ru]
+      settings:
+        modules: [modules/settings/language.html]
+      #  modules: [modules/settings/user-profile-settings.html]
+      navbar_brand:
+        name:
+          #text:
+          #class: 'text-hide'
+        image:
+          #src: /assets/images/brand/favicon-32x32.png
+          #width: 32
+          #height: 32
+          #class:
+      document_list:
+        module: modules/document-list/document-list-group.html
+      card:
+        image_display: true
+        categories_display: true
+        tags_display: true
+        date_display: false
+        new: 30
+        image:
+          parent_fit: "cover"
+          aspect_ratio: "2/1"
+          position: "body" # body, top, bottom
+        #text_align: "center"
+        #vertical_align: "center"
+        #title_link: true
+        link_type: "button"
+        link_container: "footer"
+        link_text:
+        link_icon_class: "fas fa-chevron-right fa-fw fa-lg"
+        progress_display: false
+#  -
+#    scope:
+#      path: "_categories"
+#      type: "categories"
+#    values:
+#      defaults: 3
+#      layout: "page"
+#      permalink: /categories/:title
+#  -
+#    scope:
+#      path: "_tags"
+#      type: "tags"
+#    values:
+#      defaults: 4
+#      layout: "page"
+#      permalink: /tags/:title
+#      sidebar:
+#        modules: ["modules/sidebar/tag-cloud.html"]
+  -
+    scope:
+      path: "fr-FR/"
+      lang: fr-FR
+    values:
+      defaults: fr
+      #permalink: /fr-FR/:title
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      defaults: 5
+      related_collection: [categories, tags]
+      filters:
+        metas: [categories, tags]
+      features:
+        filters: true
+  -
+    scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      defaults: 6
+      layout: "post"
+      related_collections: [categories, tags]
+      features:
+        index: true
+        comments: true
+        date: true
+        author: true
+        categories: true
+        tags: true
+        social_icons: true
+        syntax-highlighting: true
+      alerts: [_tips/example.md]
+      #bottom_navbar:
+        #modules: [modules/bottom_navbar/nav-toggler.html, modules/bottom_navbar/comments-toggler.html, modules/bottom_navbar/edit-on-github-link.html]
+      article_header:
+        modules: [modules/article/alerts.html, modules/article/title.html, modules/article/metas.html]
+      article_footer:
+        modules: [modules/article/disqus-comments.html]
+      sidebar:
+        modules: ['modules/sidebar/index.html', 'modules/article/author-box.html', 'modules/sidebar/tag-cloud.html']
+  -
+    scope:
+      path: "_terms"
+      type: "terms"
+    values:
+      defaults: 7
+      layout: "terms"
+      related_collection: [categories, tags]
+      plugins:
+        disqus: true
+        select2: true
+      features:
+        comments: true
+        terms: true
+        card: true
+        flipcard: true
+        index: true
+        speech_synthesis: true
+      article_header:
+        modules: []
+      sidebar:
+        modules: ['bootstrap-components/progress-bar.html', 'modules/sidebar/index.html']
+      settings:
+        modules: ['modules/settings/language.html', 'modules/settings/speech-synthesis-settings.html']
+  #-
+  #  scope:
+  #    path: "_alerts"
+  #    type: "alerts"
+  #  values:
+  #    defaults: 8
+  #    layout: "page"
+  #    related_collections: [categories, tags]
+  -
+    scope:
+      path: "_tips"
+      type: "tips"
+    values:
+      defaults: 9
+      layout: "page"
+      related_collections: [categories, tags]
+  -
+    scope:
+      path: "_products"
+      type: "products"
+    values:
+      defaults: 10
+      layout: "product"
+      related_collections: [brands]
+      features:
+        selection: true
+      sidebar:
+        modules: ['modules/sidebar/selection.html']
+      settings:
+        modules: ['modules/settings/language.html', 'modules/settings/user-profile-settings.html']
+
+
+
+# ------------------------------------------------------------------------------
+# Plugins variables
+# ------------------------------------------------------------------------------
+
+
+markdown: kramdown
+highlighter: rouge
+
+# https://kramdown.gettalong.org/options.html
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# https://github.com/jekyll/jekyll-seo-tag
+title: jekyll-theme-overkill
+description: > # this means to ignore newlines until "twitter_username:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://chrisbo246.github.io" # the base hostname & protocol for your site, e.g. https://githubuser.github.io
+author: chrisbo246 # Author in _data/authors.yml
+lang: "en-US" # https://www.w3schools.com/tags/ref_language_codes.asp
+logo: assets/images/brand/android-chrome-512x512.png
+webmaster_verifications:
+  google:
+  bing:
+  alexa:
+  yandex:
+  baidu:
+twitter:
+  username: jekyll-theme-overkyll
+  card:
+facebook:
+  app_id: jekyll-theme-overkyll
+  publisher: jekyll-theme-overkyll
+  admins:
+# https://developers.google.com/search/docs/data-types/social-profile
+social:
+  name:
+  links:
+    - https://chrisbo246/github.com/jekyll-theme-overkyll
+    - https://www.facebook.com/jekyll-theme.overkyll
+    - https://twitter.com/jekyll-theme-overkyll
+    - https://plus.google.com/+jekyll-theme-overkyll
+    - https://instagram.com/jekyll-theme.overkyll
+    - https://youtube.com/jekyll-theme.overkyll
+    - https://www.linkedin.com/in/jekyll-theme-overkyll
+    - https://myspace.com/jekyll-theme-overkyll
+    - https://pinterest.com/jekyll-theme-overkyll
+    - https://soundcloud.com/jekyll-theme-overkyll
+    - https://tumblr.com/jekyll-theme-overkyll
+    - https://keybase.io/jekyll-theme-overkyll
 
-# Build settings
-markdown: kramdown
-#theme: minima
-theme: overkyll-jekyll-theme
-plugins:
-  - jekyll-feed
+# https://github.com/jekyll/github-metadata
+repository: chrisbo246/jekyll-theme-overkill
+github:
+  username: chrisbo246
+  url: https://chrisbo246.github.io/jekyll-theme-overkill/
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# https://github.com/penibelst/jekyll-compress-html
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  startings: all
+  endings: all
+
+
+
+# ------------------------------------------------------------------------------
+# minima theme variables
+# https://github.com/jekyll/minima
+# ------------------------------------------------------------------------------
+
+email: your-email@domain.com
+
+header_pages:
+  - pages.md
+  - posts.md
+  - terms.md
+  - products.md
+  - about.md
+
+show_excerpts: false # set to true to show excerpts on the homepage
+google_analytics: "UA-"
+
+
+# ------------------------------------------------------------------------------
+# Jekyll-theme-overkill variables
+# ------------------------------------------------------------------------------
+
+# https://bootswatch.com/
+bootswatch_theme: minty
+
+# App tile
+web_app_manifest:
+  name: "jekyll-theme-overkill"
+  short_name: "overkill" # 12 characters max
+  theme_color: '#ffffff'
+  background_color: '#888888'
+
+# http://shopify.github.io/liquid/filters/date/
+date_format: "%d-%m-%Y" # date_format: "%b %-d, %Y"
+
+headers:
+  api-user-agent: 'jekyll-theme-overkill/1.0'
+  origin: 'https://chrisbo246.github.io/jekyll-theme-overkill/'
+
+page_title_separator: ':'
+
+yandex_translate:
+  key:
+  auto_mode: true
+  widget_theme: 'light'
+
+adsense:
+  client: 'ca-pub-8495719252049968'
+  slot: '3723415549'
+  format: 'auto'
+
+# Site social profiles (usernames)
+rss: rss
+dribbble: chrisbo246
+flickr: chrisbo246
+instagram: chrisbo246
+linkedin: chrisbo246
+pinterest: chrisbo246
+youtube: chrisbo246
+mastodon:
+  - username: chrisbo246
+    instance: example.com
+  - username: chrisbo246_2
+    instance: example.com
+
+# https://help.disqus.com/developer/javascript-configuration-variables
+disqus:
+  shortname: 'my-project'
+
+lazysizes:
+  loadMode: 1
+  #init: false
+  #preloadAfterLoad: true
+
+cookie_consent:
+  palette:
+    popup:
+      background: '#237afc'
+    button:
+      background: '#fff'
+      text: '#237afc'
+  theme: 'block'
+  position: 'bottom-right'
+
+# https://freesound.org/search/?q=&f=license%3A%22Creative+Commons+0%22+type%3A%22ogg%22&s=duration+asc&advanced=0&g=1
+sound_player:
+  container: 'body'
+  playerAttributes:
+    class: 'sound-player'
+    preload: 'none' # auto, metadata, none
+  sounds:
+    -
+      playerId: 'button-click-sound-player'
+      togglerSelector: '.btn:not([data-toggle="dropdown"])'
+      togglerEvent: 'mousedown'
+      filePath: 'assets/sounds/click.ogg'
+    -
+      playerId: 'nav-click-sound-player'
+      togglerSelector: '.nav-link'
+      togglerEvent: 'click'
+      filePath: 'assets/sounds/click.ogg'
+    -
+      playerId: 'flip-sound-player'
+      togglerSelector: 'input.flipcard-position'
+      togglerEvent: 'change'
+      filePath: 'assets/sounds/flip.ogg'
+    -
+      playerId: 'select-click-sound-player'
+      togglerSelector: 'select, .select2'
+      togglerEvent: 'click'
+      filePath: 'assets/sounds/pop-up.ogg'
+    #-
+    #  playerId: 'show-dropdown-sound-player'
+    #  togglerSelector: '[data-toggle="dropdown"]'
+    #  togglerEvent: 'show.bs.dropdown'
+    #  filePath: 'assets/sounds/pop-up.ogg'
+    -
+      playerId: 'show-popover-sound-player'
+      togglerSelector: '[data-toggle="popup"], [data-toggle="dropdown"]'
+      togglerEvent: 'show.bs.popover show.bs.dropdown'
+      filePath: 'assets/sounds/pop-up.ogg'
+    -
+      playerId: 'show-collapse-sound-player'
+      togglerSelector: '.collapse'
+      togglerEvent: 'show.bs.collapse'
+      filePath: 'assets/sounds/slide.ogg'
+    -
+      playerId: 'hide-collapse-sound-player'
+      togglerSelector: '.collapse'
+      togglerEvent: 'hide.bs.collapse'
+      filePath: 'assets/sounds/slide.ogg'
+    #-
+    #  playerId: 'close-alert-sound-player'
+    #  togglerSelector: '.alert'
+    #  togglerEvent: 'close.bs.alert'
+    #  filePath: 'assets/sounds/no.ogg'
+    -
+      playerId: 'show-modal-sound-player'
+      togglerSelector: '.modal'
+      togglerEvent: 'show.bs.modal'
+      filePath: 'assets/sounds/slide.ogg'
+    -
+      playerId: 'close-modal-sound-player'
+      togglerSelector: '.alert, .modal'
+      togglerEvent: 'close.bs.alert close.bs.modal'
+      filePath: 'assets/sounds/no.ogg'
+    -
+      playerId: 'memorized-sound-player'
+      togglerSelector: 'input.memorized'
+      togglerEvent: 'change'
+      filePath: 'assets/sounds/yes.ogg'
+    -
+      playerId: 'unmemorized-sound-player'
+      togglerSelector: 'input.unmemorized'
+      togglerEvent: 'change'
+      filePath: 'assets/sounds/no.ogg'

@@ -1,0 +1,59 @@
+{%- if include.author and site.data.authors[include.author] -%}
+{%- assign author = site.data.authors[include.author] -%}
+{%- elsif page.author and site.data.authors[page.author] -%}
+{%- assign author = site.data.authors[page.author] -%}
+{%- endif -%}
+
+{%- assign image_src = author.avatar | default: author.picture | default: author.image -%}
+{%- if site.disqus.username -%}
+{%- assign image_src = 'https://disqus.com/api/users/avatars/' | append: site.disqus.username | append: '.jpg' -%}
+{%- endif -%}
+
+{%- if author -%}
+<aside class="card">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="bio-tab" href="#bio" data-toggle="tab" aria-controls="home" aria-selected="true">{{ t.bio }}</a>
+      </li>
+      {%- comment -%}
+      <li class="nav-item">
+        <a class="nav-link" id="profile-tab" href="#profile" data-toggle="tab" aria-controls="home" aria-selected="false">{{ t.profile }}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="contact-tab" href="#contact" data-toggle="tab" aria-controls="home" aria-selected="false">{{ t.contact }}</a>
+      </li>
+      {%- endcomment -%}
+    </ul>
+  </div>
+  <div class="card-body">
+    <div class="tab-content" id="author-box-tab-content">
+
+      <div class="tab-pane fade show active" id="bio" role="tabpanel" aria-labelledby="bio-tab">
+
+        {%- if image_src -%}
+        <img class="float-left mr-3 img-thumbnail" src="{{ image_src | relative_url }}" alt="{{ author.name }}" width="50" height="50" />
+        {%- elsif author.github -%}
+        <div class="float-left mr-3">{% avatar author.github size=50 lazy=true %}</div>
+        {%- endif -%}
+
+        <h5 class="card-title">{{ author.name }}</h5>
+        {%- if author.bio -%}<p class="card-text">{{ author.bio[lang] | author.bio }}</p>{%- endif -%}
+
+        {%- include modules/social-icons.html -%}
+
+      </div>
+
+      {%- comment -%}
+      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+      </div>
+      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+      </div>
+      {%- endcomment -%}
+
+    </div>
+  </div>
+</aside>
+{%- endif -%}

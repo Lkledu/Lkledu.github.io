@@ -1,0 +1,36 @@
+<head>
+
+  {%- seo -%}
+
+  <!-- Begin Feed Meta -->
+  {%- feed_meta -%}
+  <!-- End Feed Meta -->
+
+  <!-- Start jekyll-theme-overkill -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, shrink-to-fit=no">
+
+  <meta name="theme-color" content="{{ site.web_app_manifest.theme_color | default: '#ffffff' }}">
+  <meta name="msapplication-config" content="{{ '/assets/browserconfig.xml' | relative_url }}" />
+
+  <link rel="icon" sizes="32x32" type="image/png" href="{{ '/assets/images/brand/favicon-32x32.png' | relative_url }}">
+  <link rel="icon" sizes="16x16" type="image/png" href="{{ '/assets/images/brand/favicon-16x16.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/brand/apple-touch-icon.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="57x57" href="{{ '/assets/images/brand/apple-touch-icon.png' | relative_url }}">
+  <link rel="mask-icon" href="{{ '/assets/images/brand/safari-pinned-tab.svg' | relative_url }}" color="{{ site.theme_color | default: '#ffffff' }}">
+  <link rel="manifest" href="{{ '/assets/manifest.json' | relative_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ site.feed.path | default: '/feed.xml' | relative_url }}">
+
+  {%- capture criticalcss -%}
+  {%- include styles/critical.scss -%}
+  {%- endcapture -%}
+  {%- assign criticalcss = criticalcss | strip -%}
+  {%- if criticalcss.size > 0 -%}
+  <style type="text/css">{{ criticalcss | scssify }}</style>
+  {%- else -%}
+  {%- include partials/styles.html -%}
+  {%- endif -%}
+  <!-- End jekyll-theme-overkill -->
+
+</head>

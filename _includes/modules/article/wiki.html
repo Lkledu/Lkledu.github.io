@@ -1,0 +1,14 @@
+
+{% if include.url %}
+<div class="mediawiki clearfix"
+    data-url="{{ include.url }}"
+    {% if include.section %}data-section="{{ include.section }}"{% endif %}
+    ></div>
+<p class="text-muted">From Wikipedia, The Free Encyclopedia. <a href="{{ include.url }}" target="_blank">{{ include.url }}</a></p>
+{% elsif include.query %}
+<p>
+    <a class="contribute" href="https://www.google.com/search?as_q={{ include.query | url_encode }}&as_sitesearch=wikipedia.org" target="_blank">
+        Search "{{ include.query }}" on Wikipedia
+    </a>
+</p>
+{% endif %}

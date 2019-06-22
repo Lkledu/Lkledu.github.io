@@ -1,0 +1,38 @@
+.document-list {
+
+  perspective: 1000px;
+
+  > * {
+    opacity: 0;
+    transform-origin: top center;
+
+    @for $i from 1 through 100 {
+      &:nth-child(#{$i}) {
+        animation-delay: (150ms * $i) - 300;
+        animation-duration: 300ms;
+        animation-fill-mode: forwards;
+        animation-name: document-list-animation;
+        animation-timing-function: ease-in-out;
+      }
+    }
+
+  }
+
+}
+
+
+@keyframes document-list-animation {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+
+  50% {
+    transform: rotateX(20deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}

@@ -1,0 +1,20 @@
+{%- assign post = include.post | default: page -%}
+
+{%- assign title = include.title | default: post.title -%}
+{%- assign subtitle = include.subtitle | default: post.subtitle -%}
+
+{%- if title -%}
+<h1 {% unless include.post %}itemprop="name headline"{% endunless %}>
+
+  {%- if site.page_title_separator -%}
+  {{ title | strip | escape | split: site.page_title_separator | join: '<br>' }}
+  {%- else -%}
+  {{ title | strip | escape }}
+  {%- endif -%}
+
+  {%- if subtitle -%}
+  <small class="text-muted d-block">{{ subtitle | escape }}</small>
+  {%- endif -%}
+
+</h1>
+{%- endif -%}

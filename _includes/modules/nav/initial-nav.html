@@ -1,0 +1,24 @@
+{%- if include.posts.size > 0 -%}
+
+{%- assign alphabet = 'a b c d e f g h i j k l m n o p q r s t u v w x y z' | split: ' ' -%}
+
+{%- assign letters = '' | split: ' ' -%}
+{%- for post in include.posts -%}
+{%- assign letter = post.title | strip | slice: 0 | downcase -%}
+{%- if alphabet contains letter -%}
+{%- assign letters = letters | push: letter -%}
+{%- endif -%}
+{%- endfor -%}
+{%- assign letters = letters | uniq | sort -%}
+
+<ul class="{{ include.container_class | default: 'list-inline' }}">
+{%- for letter in letters -%}
+  <li>
+    <a href="#{{ letter }}" class="{{ include.link_class }}" role="button">
+      {{ letter | capitalize }}
+    </a>
+  </li>
+{%- endfor -%}
+</ul>
+
+{%- endif -%}

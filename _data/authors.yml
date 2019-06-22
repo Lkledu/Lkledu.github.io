@@ -1,0 +1,27 @@
+chrisbo246:
+  type: "Person"
+  name: "chrisbo246"
+  bio:
+    en-US: >
+      Dyslexic GenX with industrial training and headhunter bogey, I kill time testing the latest web technos.
+    fr-FR: >
+      Genération X dyslexique de formation industrielle et épouvantail à chasseur de têtes, je tue le temps en testant les dernières technos Web.
+  picture: /assets/images/authors/chrisbo246.png
+  image:
+    path: /assets/images/authors/chrisbo246.png
+    width: 897
+    height: 897
+  url:
+  github: chrisbo246
+  twitter: chrisbo246
+  facebook: chrisbo246
+  google_plus: chrisbo246
+  dribbble: chrisbo246
+  flickr: chrisbo246
+  instagram: chrisbo246
+  linkedin: chrisbo246
+  pinterest: chrisbo246
+  youtube: chrisbo246
+  mastodon:
+    - username: chrisbo246
+      instance: example.com

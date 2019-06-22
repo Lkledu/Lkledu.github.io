@@ -1,0 +1,46 @@
+[
+  {
+    "id": "man",
+    "singular_names": {
+      "en-US": "Man",
+      "fr-FR": "Homme"
+    },
+    "plural_names": {
+      "en-US": "Men",
+      "fr-FR": "Hommes"
+    }
+  },
+  {
+    "id": "woman",
+    "singular_names": {
+      "en-US": "Woman",
+      "fr-FR": "Femme"
+    },
+    "plural_names": {
+      "en-US": "Women",
+      "fr-FR": "Femmes"
+    }
+  },
+  {
+    "id": "boy",
+    "singular_names": {
+      "en-US": "Boy",
+      "fr-FR": "Garçon"
+    },
+    "plural_names": {
+      "en-US": "Boys",
+      "fr-FR": "Garçons"
+    }
+  },
+  {
+    "id": "girl",
+    "singular_names": {
+      "en-US": "Girl",
+      "fr-FR": "Fille"
+    },
+    "plural_names": {
+      "en-US": "Girls",
+      "fr-FR": "Filles"
+    }
+  }
+]

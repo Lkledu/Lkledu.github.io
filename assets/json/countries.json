@@ -1,0 +1,1994 @@
+[
+  {
+    "code_iso_3166-1": "AD",
+    "names": {
+      "local": ["Andorra"],
+      "en-US": ["Andorra"]
+    },
+    "language_codes_iso_639-1": ["ca"]
+  },
+  {
+    "code_iso_3166-1": "AE",
+    "names": {
+      "local": ["دولة الإمارات العربيّة المتّحدة"],
+      "en-US": ["United Arab Emirates"]
+    },
+    "language_codes_iso_639-1": ["ar"]
+  },
+  {
+    "code_iso_3166-1": "AF",
+    "names": {
+      "local": ["د افغانستان اسلامي دولتدولت اسلامی افغانستان", "جمهوری اسلامی افغانستان"],
+      "en-US": ["Afghanistan"]
+    },
+    "language_codes_iso_639-1": ["fa", "ps"]
+  },
+  {
+    "code_iso_3166-1": "AG",
+    "names": {
+      "local": ["Antigua and Barbuda"],
+      "en-US": ["Antigua and Barbuda"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "AI",
+    "names": {
+      "local": ["Anguilla"],
+      "en-US": ["Anguilla"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "AL",
+    "names": {
+      "local": ["Shqipëria"],
+      "en-US": ["Albania"]
+    },
+    "language_codes_iso_639-1": ["sq"]
+  },
+  {
+    "code_iso_3166-1": "AM",
+    "names": {
+      "local": ["Հայաստան"],
+      "en-US": ["Armenia"]
+    },
+    "language_codes_iso_639-1": ["hy"]
+  },
+  {
+    "code_iso_3166-1": "AO",
+    "names": {
+      "local": ["Angola"],
+      "en-US": ["Angola"]
+    },
+    "language_codes_iso_639-1": ["pt"]
+  },
+  {
+    "code_iso_3166-1": "AQ",
+    "names": {
+      "local": ["Antarctica", "Antártico", "Antarctique", "Антарктике"],
+      "en-US": ["Antarctica"]
+    },
+    "language_codes_iso_639-1": ["en", "es", "fr", "ru"]
+  },
+  {
+    "code_iso_3166-1": "AR",
+    "names": {
+      "local": ["Argentina"],
+      "en-US": ["Argentina"]
+    },
+    "language_codes_iso_639-1": ["es"]
+  },
+  {
+    "code_iso_3166-1": "AS",
+    "names": {
+      "local": ["American Samoa"],
+      "en-US": ["American Samoa"]
+    },
+    "language_codes_iso_639-1": ["en", "sm"]
+  },
+  {
+    "code_iso_3166-1": "AT",
+    "names": {
+      "local": ["Österreich"],
+      "en-US": ["Austria"]
+    },
+    "language_codes_iso_639-1": ["de"]
+  },
+  {
+    "code_iso_3166-1": "AU",
+    "names": {
+      "local": ["Australia"],
+      "en-US": ["Australia"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "AW",
+    "names": {
+      "local": ["Aruba"],
+      "en-US": ["Aruba"]
+    },
+    "language_codes_iso_639-1": ["nl", "pap"]
+  },
+  {
+    "code_iso_3166-1": "AX",
+    "names": {
+      "local": ["Åland"],
+      "en-US": ["Aland Islands"]
+    },
+    "language_codes_iso_639-1": ["sv"]
+  },
+  {
+    "code_iso_3166-1": "AZ",
+    "names": {
+      "local": ["Azərbaycan"],
+      "en-US": ["Azerbaijan"]
+    },
+    "language_codes_iso_639-1": ["az"]
+  },
+  {
+    "code_iso_3166-1": "BA",
+    "names": {
+      "local": ["Bosna i Hercegovina"],
+      "en-US": ["Bosnia and Herzegovina"]
+    },
+    "language_codes_iso_639-1": ["bs", "hr", "sr"]
+  },
+  {
+    "code_iso_3166-1": "BB",
+    "names": {
+      "local": ["Barbados"],
+      "en-US": ["Barbados"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "BD",
+    "names": {
+      "local": ["গণপ্রজাতন্ত্রী বাংলাদেশ"],
+      "en-US": ["Bangladesh"]
+    },
+    "language_codes_iso_639-1": ["bn"]
+  },
+  {
+    "code_iso_3166-1": "BE",
+    "names": {
+      "local": ["België", "Belgique", "Belgien"],
+      "en-US": ["Belgium"]
+    },
+    "language_codes_iso_639-1": ["nl", "fr", "de"]
+  },
+  {
+    "code_iso_3166-1": "BF",
+    "names": {
+      "local": ["Burkina Faso"],
+      "en-US": ["Burkina Faso"]
+    },
+    "language_codes_iso_639-1": ["fr"]
+  },
+  {
+    "code_iso_3166-1": "BG",
+    "names": {
+      "local": ["България"],
+      "en-US": ["Bulgaria"]
+    },
+    "language_codes_iso_639-1": ["bg"]
+  },
+  {
+    "code_iso_3166-1": "BH",
+    "names": {
+      "local": ["البحرين"],
+      "en-US": ["Bahrein"]
+    },
+    "language_codes_iso_639-1": ["ar"]
+  },
+  {
+    "code_iso_3166-1": "BI",
+    "names": {
+      "local": ["Burundi"],
+      "en-US": ["Burundi"]
+    },
+    "language_codes_iso_639-1": ["fr"]
+  },
+  {
+    "code_iso_3166-1": "BJ",
+    "names": {
+      "local": ["Bénin"],
+      "en-US": ["Benin"]
+    },
+    "language_codes_iso_639-1": ["fr"]
+  },
+  {
+    "code_iso_3166-1": "BL",
+    "names": {
+      "local": ["Saint-Barthélemy"],
+      "en-US": ["Saint-Barthélemy"]
+    },
+    "language_codes_iso_639-1": ["fr"]
+  },
+  {
+    "code_iso_3166-1": "BM",
+    "names": {
+      "local": ["Bermuda"],
+      "en-US": ["Bermuda"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "BN",
+    "names": {
+      "local": ["Brunei Darussalam"],
+      "en-US": ["Brunei Darussalam"]
+    },
+    "language_codes_iso_639-1": ["ms"]
+  },
+  {
+    "code_iso_3166-1": "BO",
+    "names": {
+      "local": ["Bolivia", "Bulibiya", "Volívia", "Wuliwya"],
+      "en-US": ["Bolivia"]
+    },
+    "language_codes_iso_639-1": ["es", "qu", "gn", "ay"]
+  },
+  {
+    "code_iso_3166-1": "BQ",
+    "names": {
+      "local": ["Caribisch Nederland"],
+      "en-US": ["Caribbean Netherlands"]
+    },
+    "language_codes_iso_639-1": ["nl"]
+  },
+  {
+    "code_iso_3166-1": "BR",
+    "names": {
+      "local": ["Brasil"],
+      "en-US": ["Brazil"]
+    },
+    "language_codes_iso_639-1": ["pt"]
+  },
+  {
+    "code_iso_3166-1": "BS",
+    "names": {
+      "local": ["Bahamas"],
+      "en-US": ["Bahamas"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "BT",
+    "names": {
+      "local": ["འབྲུག་ཡུལ"],
+      "en-US": ["Bhutan"]
+    },
+    "language_codes_iso_639-1": ["dz"]
+  },
+  {
+    "code_iso_3166-1": "BV",
+    "names": {
+      "local": ["Bouvetøya"],
+      "en-US": ["Bouvet Island"]
+    },
+    "language_codes_iso_639-1": ["no"]
+  },
+  {
+    "code_iso_3166-1": "BW",
+    "names": {
+      "local": ["Botswana"],
+      "en-US": ["Botswana"]
+    },
+    "language_codes_iso_639-1": ["en", "tn"]
+  },
+  {
+    "code_iso_3166-1": "BY",
+    "names": {
+      "local": ["Беларусь"],
+      "en-US": ["Belarus"]
+    },
+    "language_codes_iso_639-1": ["be", "ru"]
+  },
+  {
+    "code_iso_3166-1": "BZ",
+    "names": {
+      "local": ["Belize"],
+      "en-US": ["Belize"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "CA",
+    "names": {
+      "local": ["Canada"],
+      "en-US": ["Canada"]
+    },
+    "language_codes_iso_639-1": ["en", "fr"]
+  },
+  {
+    "code_iso_3166-1": "CC",
+    "names": {
+      "local": ["Cocos (Keeling) Islands"],
+      "en-US": ["Cocos (Keeling) Islands"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "CD",
+    "names": {
+      "local": ["République Démocratique du Congo"],
+      "en-US": ["Democratic Republic of the Congo (Congo-Kinshasa", "former Zaire)"]
+    },
+    "language_codes_iso_639-1": ["fr"]
+  },
+  {
+    "code_iso_3166-1": "CF",
+    "names": {
+      "local": ["République centrafricaine", "Ködörösêse tî Bêafrîka"],
+      "en-US": ["Centrafrican Republic"]
+    },
+    "language_codes_iso_639-1": ["fr", "sg"]
+  },
+  {
+    "code_iso_3166-1": "CG",
+    "names": {
+      "local": ["République du Congo"],
+      "en-US": ["Republic of the Congo (Congo-Brazzaville)"]
+    },
+    "language_codes_iso_639-1": ["fr"]
+  },
+  {
+    "code_iso_3166-1": "CH",
+    "names": {
+      "local": ["Schweiz", "Suisse", "Svizzera", "Svizra"],
+      "en-US": ["Switzerland"]
+    },
+    "language_codes_iso_639-1": ["de", "fr", "it", "rm"]
+  },
+  {
+    "code_iso_3166-1": "CI",
+    "names": {
+      "local": ["Côte d'Ivoire"],
+      "en-US": ["Côte d'Ivoire"]
+    },
+    "language_codes_iso_639-1": ["fr"]
+  },
+  {
+    "code_iso_3166-1": "CK",
+    "names": {
+      "local": ["Cook Islands", "Kūki ʻĀirani"],
+      "en-US": ["Cook Islands"]
+    },
+    "language_codes_iso_639-1": ["en", "rar"]
+  },
+  {
+    "code_iso_3166-1": "CL",
+    "names": {
+      "local": ["Chile"],
+      "en-US": ["Chile"]
+    },
+    "language_codes_iso_639-1": ["es"]
+  },
+  {
+    "code_iso_3166-1": "CM",
+    "names": {
+      "local": ["Cameroun", "Cameroon"],
+      "en-US": ["Cameroon"]
+    },
+    "language_codes_iso_639-1": ["fr", "en"]
+  },
+  {
+    "code_iso_3166-1": "CN",
+    "names": {
+      "local": ["中国"],
+      "en-US": ["China"]
+    },
+    "language_codes_iso_639-1": ["zh-hans"]
+  },
+  {
+    "code_iso_3166-1": "CO",
+    "names": {
+      "local": ["Colombia"],
+      "en-US": ["Colombia"]
+    },
+    "language_codes_iso_639-1": ["es"]
+  },
+  {
+    "code_iso_3166-1": "CR",
+    "names": {
+      "local": ["Costa Rica"],
+      "en-US": ["Costa Rica"]
+    },
+    "language_codes_iso_639-1": ["es"]
+  },
+  {
+    "code_iso_3166-1": "CU",
+    "names": {
+      "local": ["Cuba"],
+      "en-US": ["Cuba"]
+    },
+    "language_codes_iso_639-1": ["es"]
+  },
+  {
+    "code_iso_3166-1": "CV",
+    "names": {
+      "local": ["Cabo Verde"],
+      "en-US": ["Cabo Verde"]
+    },
+    "language_codes_iso_639-1": ["pt"]
+  },
+  {
+    "code_iso_3166-1": "CW",
+    "names": {
+      "local": ["Curaçao"],
+      "en-US": ["Curaçao"]
+    },
+    "language_codes_iso_639-1": ["nl", "en"]
+  },
+  {
+    "code_iso_3166-1": "CX",
+    "names": {
+      "local": ["Christmas Island"],
+      "en-US": ["Christmas Island"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "CY",
+    "names": {
+      "local": ["Κύπρος", "Kibris"],
+      "en-US": ["Cyprus"]
+    },
+    "language_codes_iso_639-1": ["el", "tr"]
+  },
+  {
+    "code_iso_3166-1": "CZ",
+    "names": {
+      "local": ["Česká republika"],
+      "en-US": ["Czech Republic"]
+    },
+    "language_codes_iso_639-1": ["cs"]
+  },
+  {
+    "code_iso_3166-1": "DE",
+    "names": {
+      "local": ["Deutschland"],
+      "en-US": ["Germany"]
+    },
+    "language_codes_iso_639-1": ["de"]
+  },
+  {
+    "code_iso_3166-1": "DJ",
+    "names": {
+      "local": ["Djibouti", "جيبوتي", "Jabuuti", "Gabuutih"],
+      "en-US": ["Djibouti"]
+    },
+    "language_codes_iso_639-1": ["fr", "ar", "so", "aa"]
+  },
+  {
+    "code_iso_3166-1": "DK",
+    "names": {
+      "local": ["Danmark"],
+      "en-US": ["Denmark"]
+    },
+    "language_codes_iso_639-1": ["da"]
+  },
+  {
+    "code_iso_3166-1": "DM",
+    "names": {
+      "local": ["Dominica"],
+      "en-US": ["Dominica"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "DO",
+    "names": {
+      "local": ["República Dominicana"],
+      "en-US": ["Dominican Republic"]
+    },
+    "language_codes_iso_639-1": ["es"]
+  },
+  {
+    "code_iso_3166-1": "DZ",
+    "names": {
+      "local": ["الجزائر"],
+      "en-US": ["Algeria"]
+    },
+    "language_codes_iso_639-1": ["ar"]
+  },
+  {
+    "code_iso_3166-1": "EC",
+    "names": {
+      "local": ["Ecuador"],
+      "en-US": ["Ecuador"]
+    },
+    "language_codes_iso_639-1": ["es"]
+  },
+  {
+    "code_iso_3166-1": "EE",
+    "names": {
+      "local": ["Eesti"],
+      "en-US": ["Estonia"]
+    },
+    "language_codes_iso_639-1": ["et"]
+  },
+  {
+    "code_iso_3166-1": "EG",
+    "names": {
+      "local": ["مصر"],
+      "en-US": ["Egypt"]
+    },
+    "language_codes_iso_639-1": ["ar"]
+  },
+  {
+    "code_iso_3166-1": "EH",
+    "names": {
+      "local": ["Sahara Occidental"],
+      "en-US": ["Western Sahara"]
+    },
+    "language_codes_iso_639-1": ["ar", "es", "fr"]
+  },
+  {
+    "code_iso_3166-1": "ER",
+    "names": {
+      "local": ["ኤርትራ", "إرتريا", "Eritrea"],
+      "en-US": ["Eritrea"]
+    },
+    "language_codes_iso_639-1": ["ti", "ar", "en"]
+  },
+  {
+    "code_iso_3166-1": "ES",
+    "names": {
+      "local": ["España"],
+      "en-US": ["Spain"]
+    },
+    "language_codes_iso_639-1": ["ast", "ca", "es", "eu", "gl"]
+  },
+  {
+    "code_iso_3166-1": "ET",
+    "names": {
+      "local": ["ኢትዮጵያ", "Itoophiyaa"],
+      "en-US": ["Ethiopia"]
+    },
+    "language_codes_iso_639-1": ["am", "om"]
+  },
+  {
+    "code_iso_3166-1": "FI",
+    "names": {
+      "local": ["Suomi"],
+      "en-US": ["Finland"]
+    },
+    "language_codes_iso_639-1": ["fi", "sv", "se"]
+  },
+  {
+    "code_iso_3166-1": "FJ",
+    "names": {
+      "local": ["Fiji"],
+      "en-US": ["Fiji"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "FK",
+    "names": {
+      "local": ["Falkland Islands"],
+      "en-US": ["Falkland Islands"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "FM",
+    "names": {
+      "local": ["Micronesia"],
+      "en-US": ["Micronesia (Federated States of)"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "FO",
+    "names": {
+      "local": ["Føroyar", "Færøerne"],
+      "en-US": ["Faroe Islands"]
+    },
+    "language_codes_iso_639-1": ["fo", "da"]
+  },
+  {
+    "code_iso_3166-1": "FR",
+    "names": {
+      "local": ["France"],
+      "en-US": ["France"]
+    },
+    "language_codes_iso_639-1": ["fr"]
+  },
+  {
+    "code_iso_3166-1": "GA",
+    "names": {
+      "local": ["Gabon"],
+      "en-US": ["Gabon"]
+    },
+    "language_codes_iso_639-1": ["fr"]
+  },
+  {
+    "code_iso_3166-1": "GB",
+    "names": {
+      "local": ["United Kingdom"],
+      "en-US": ["United Kingdom"]
+    },
+    "language_codes_iso_639-1": ["en", "ga", "cy", "gd", "kw"]
+  },
+  {
+    "code_iso_3166-1": "GD",
+    "names": {
+      "local": ["Grenada"],
+      "en-US": ["Grenada"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "GE",
+    "names": {
+      "local": ["საქართველო"],
+      "en-US": ["Georgia"]
+    },
+    "language_codes_iso_639-1": ["ka"]
+  },
+  {
+    "code_iso_3166-1": "GF",
+    "names": {
+      "local": ["Guyane française"],
+      "en-US": ["French Guiana"]
+    },
+    "language_codes_iso_639-1": ["fr"]
+  },
+  {
+    "code_iso_3166-1": "GG",
+    "names": {
+      "local": ["Guernsey"],
+      "en-US": ["Guernsey"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "GH",
+    "names": {
+      "local": ["Ghana"],
+      "en-US": ["Ghana"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "GI",
+    "names": {
+      "local": ["Gibraltar"],
+      "en-US": ["Gibraltar"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "GL",
+    "names": {
+      "local": ["Kalaallit Nunaat", "Grønland"],
+      "en-US": ["Greenland"]
+    },
+    "language_codes_iso_639-1": ["kl", "da"]
+  },
+  {
+    "code_iso_3166-1": "GM",
+    "names": {
+      "local": ["The Gambia"],
+      "en-US": ["The Gambia"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "GN",
+    "names": {
+      "local": ["Guinée"],
+      "en-US": ["Guinea"]
+    },
+    "language_codes_iso_639-1": ["fr"]
+  },
+  {
+    "code_iso_3166-1": "GP",
+    "names": {
+      "local": ["Guadeloupe"],
+      "en-US": ["Guadeloupe"]
+    },
+    "language_codes_iso_639-1": ["fr"]
+  },
+  {
+    "code_iso_3166-1": "GQ",
+    "names": {
+      "local": ["Guiena ecuatorial", "Guinée équatoriale", "Guiné Equatorial"],
+      "en-US": ["Equatorial Guinea"]
+    },
+    "language_codes_iso_639-1": ["es", "fr", "pt"]
+  },
+  {
+    "code_iso_3166-1": "GR",
+    "names": {
+      "local": ["Ελλάδα"],
+      "en-US": ["Greece"]
+    },
+    "language_codes_iso_639-1": ["el"]
+  },
+  {
+    "code_iso_3166-1": "GS",
+    "names": {
+      "local": ["South Georgia and the South Sandwich Islands"],
+      "en-US": ["South Georgia and the South Sandwich Islands"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "GT",
+    "names": {
+      "local": ["Guatemala"],
+      "en-US": ["Guatemala"]
+    },
+    "language_codes_iso_639-1": ["es"]
+  },
+  {
+    "code_iso_3166-1": "GU",
+    "names": {
+      "local": ["Guam", "Guåhån"],
+      "en-US": ["Guam"]
+    },
+    "language_codes_iso_639-1": ["en", "ch"]
+  },
+  {
+    "code_iso_3166-1": "GW",
+    "names": {
+      "local": ["Guiné-Bissau"],
+      "en-US": ["Guinea Bissau"]
+    },
+    "language_codes_iso_639-1": ["pt"]
+  },
+  {
+    "code_iso_3166-1": "GY",
+    "names": {
+      "local": ["Guyana"],
+      "en-US": ["Guyana"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "HK",
+    "names": {
+      "local": ["香港", "Hong Kong"],
+      "en-US": ["Hong Kong (SAR of China)"]
+    },
+    "language_codes_iso_639-1": ["zh-hant", "en"]
+  },
+  {
+    "code_iso_3166-1": "HM",
+    "names": {
+      "local": ["Heard Island and McDonald Islands"],
+      "en-US": ["Heard Island and McDonald Islands"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "HN",
+    "names": {
+      "local": ["Honduras"],
+      "en-US": ["Honduras"]
+    },
+    "language_codes_iso_639-1": ["es"]
+  },
+  {
+    "code_iso_3166-1": "HR",
+    "names": {
+      "local": ["Hrvatska"],
+      "en-US": ["Croatia"]
+    },
+    "language_codes_iso_639-1": ["hr"]
+  },
+  {
+    "code_iso_3166-1": "HT",
+    "names": {
+      "local": ["Haïti", "Ayiti"],
+      "en-US": ["Haiti"]
+    },
+    "language_codes_iso_639-1": ["fr", "ht"]
+  },
+  {
+    "code_iso_3166-1": "HU",
+    "names": {
+      "local": ["Magyarország"],
+      "en-US": ["Hungary"]
+    },
+    "language_codes_iso_639-1": ["hu"]
+  },
+  {
+    "code_iso_3166-1": "ID",
+    "names": {
+      "local": ["Indonesia"],
+      "en-US": ["Indonesia"]
+    },
+    "language_codes_iso_639-1": ["id"]
+  },
+  {
+    "code_iso_3166-1": "IE",
+    "names": {
+      "local": ["Ireland", "Éire"],
+      "en-US": ["Ireland"]
+    },
+    "language_codes_iso_639-1": ["en", "ga"]
+  },
+  {
+    "code_iso_3166-1": "IL",
+    "names": {
+      "local": ["ישראל"],
+      "en-US": ["Israel"]
+    },
+    "language_codes_iso_639-1": ["he"]
+  },
+  {
+    "code_iso_3166-1": "IM",
+    "names": {
+      "local": ["Isle of Man"],
+      "en-US": ["Isle of Man"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "IN",
+    "names": {
+      "local": ["भारत", "India"],
+      "en-US": ["India"]
+    },
+    "language_codes_iso_639-1": ["hi", "en"]
+  },
+  {
+    "code_iso_3166-1": "IO",
+    "names": {
+      "local": ["British Indian Ocean Territory"],
+      "en-US": ["British Indian Ocean Territory"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "IQ",
+    "names": {
+      "local": ["العراق", "Iraq"],
+      "en-US": ["Iraq"]
+    },
+    "language_codes_iso_639-1": ["ar", "ku"]
+  },
+  {
+    "code_iso_3166-1": "IR",
+    "names": {
+      "local": ["ایران"],
+      "en-US": ["Iran"]
+    },
+    "language_codes_iso_639-1": ["fa"]
+  },
+  {
+    "code_iso_3166-1": "IS",
+    "names": {
+      "local": ["Ísland"],
+      "en-US": ["Iceland"]
+    },
+    "language_codes_iso_639-1": ["is"]
+  },
+  {
+    "code_iso_3166-1": "IT",
+    "names": {
+      "local": ["Italia"],
+      "en-US": ["Italia"]
+    },
+    "language_codes_iso_639-1": ["it", "de", "fr"]
+  },
+  {
+    "code_iso_3166-1": "JE",
+    "names": {
+      "local": ["Jersey"],
+      "en-US": ["Jersey"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "JM",
+    "names": {
+      "local": ["Jamaica"],
+      "en-US": ["Jamaica"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "JO",
+    "names": {
+      "local": ["الأُرْدُن"],
+      "en-US": ["Jordan"]
+    },
+    "language_codes_iso_639-1": ["ar"]
+  },
+  {
+    "code_iso_3166-1": "JP",
+    "names": {
+      "local": ["日本"],
+      "en-US": ["Japan"]
+    },
+    "language_codes_iso_639-1": ["ja"]
+  },
+  {
+    "code_iso_3166-1": "KE",
+    "names": {
+      "local": ["Kenya"],
+      "en-US": ["Kenya"]
+    },
+    "language_codes_iso_639-1": ["sw", "en"]
+  },
+  {
+    "code_iso_3166-1": "KG",
+    "names": {
+      "local": ["Кыргызстан", "Киргизия"],
+      "en-US": ["Kyrgyzstan"]
+    },
+    "language_codes_iso_639-1": ["ky", "ru"]
+  },
+  {
+    "code_iso_3166-1": "KH",
+    "names": {
+      "local": ["កម្ពុជា"],
+      "en-US": ["Cambodia"]
+    },
+    "language_codes_iso_639-1": ["km"]
+  },
+  {
+    "code_iso_3166-1": "KI",
+    "names": {
+      "local": ["Kiribati"],
+      "en-US": ["Kiribati"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "KM",
+    "names": {
+      "local": ["ﺍﻟﻘﻤﺮي", "Comores", "Komori"],
+      "en-US": ["Comores"]
+    },
+    "language_codes_iso_639-1": ["ar", "fr", "sw"]
+  },
+  {
+    "code_iso_3166-1": "KN",
+    "names": {
+      "local": ["Saint Kitts and Nevis"],
+      "en-US": ["Saint Kitts and Nevis"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "KP",
+    "names": {
+      "local": ["북조선"],
+      "en-US": ["North Korea"]
+    },
+    "language_codes_iso_639-1": ["ko"]
+  },
+  {
+    "code_iso_3166-1": "KR",
+    "names": {
+      "local": ["대한민국"],
+      "en-US": ["South Korea"]
+    },
+    "language_codes_iso_639-1": ["ko", "en"]
+  },
+  {
+    "code_iso_3166-1": "KW",
+    "names": {
+      "local": ["الكويت"],
+      "en-US": ["Kuweit"]
+    },
+    "language_codes_iso_639-1": ["ar"]
+  },
+  {
+    "code_iso_3166-1": "KY",
+    "names": {
+      "local": ["Cayman Islands"],
+      "en-US": ["Cayman Islands"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "KZ",
+    "names": {
+      "local": ["Қазақстан", "Казахстан"],
+      "en-US": ["Kazakhstan"]
+    },
+    "language_codes_iso_639-1": ["kk", "ru"]
+  },
+  {
+    "code_iso_3166-1": "LA",
+    "names": {
+      "local": ["ປະຊາຊົນລາວ"],
+      "en-US": ["Laos"]
+    },
+    "language_codes_iso_639-1": ["lo"]
+  },
+  {
+    "code_iso_3166-1": "LB",
+    "names": {
+      "local": ["لبنان", "Liban"],
+      "en-US": ["Lebanon"]
+    },
+    "language_codes_iso_639-1": ["ar", "fr"]
+  },
+  {
+    "code_iso_3166-1": "LC",
+    "names": {
+      "local": ["Saint Lucia"],
+      "en-US": ["Saint Lucia"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "LI",
+    "names": {
+      "local": ["Liechtenstein"],
+      "en-US": ["Liechtenstein"]
+    },
+    "language_codes_iso_639-1": ["de"]
+  },
+  {
+    "code_iso_3166-1": "LK",
+    "names": {
+      "local": ["ශ්‍රී ලංකා", "இலங்கை"],
+      "en-US": ["Sri Lanka"]
+    },
+    "language_codes_iso_639-1": ["si", "ta"]
+  },
+  {
+    "code_iso_3166-1": "LR",
+    "names": {
+      "local": ["Liberia"],
+      "en-US": ["Liberia"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "LS",
+    "names": {
+      "local": ["Lesotho"],
+      "en-US": ["Lesotho"]
+    },
+    "language_codes_iso_639-1": ["en", "st"]
+  },
+  {
+    "code_iso_3166-1": "LT",
+    "names": {
+      "local": ["Lietuva"],
+      "en-US": ["Lithuania"]
+    },
+    "language_codes_iso_639-1": ["lt"]
+  },
+  {
+    "code_iso_3166-1": "LU",
+    "names": {
+      "local": ["Lëtzebuerg", "Luxembourg", "Luxemburg"],
+      "en-US": ["Luxembourg"]
+    },
+    "language_codes_iso_639-1": ["lb", "fr", "de"]
+  },
+  {
+    "code_iso_3166-1": "LV",
+    "names": {
+      "local": ["Latvija"],
+      "en-US": ["Latvia"]
+    },
+    "language_codes_iso_639-1": ["lv"]
+  },
+  {
+    "code_iso_3166-1": "LY",
+    "names": {
+      "local": ["ليبيا"],
+      "en-US": ["Libya"]
+    },
+    "language_codes_iso_639-1": ["ar"]
+  },
+  {
+    "code_iso_3166-1": "MA",
+    "names": {
+      "local": ["Maroc", "ⵍⵎⵖⵔⵉⴱ", "المغرب"],
+      "en-US": ["Morocco"]
+    },
+    "language_codes_iso_639-1": ["fr", "zgh", "ar"]
+  },
+  {
+    "code_iso_3166-1": "MC",
+    "names": {
+      "local": ["Monaco"],
+      "en-US": ["Monaco"]
+    },
+    "language_codes_iso_639-1": ["fr"]
+  },
+  {
+    "code_iso_3166-1": "MD",
+    "names": {
+      "local": ["Moldova", "Молдавия"],
+      "en-US": ["Moldova"]
+    },
+    "language_codes_iso_639-1": ["ro", "ru", "uk"]
+  },
+  {
+    "code_iso_3166-1": "ME",
+    "names": {
+      "local": ["Crna Gora", "Црна Гора"],
+      "en-US": ["Montenegro"]
+    },
+    "language_codes_iso_639-1": ["srp", "sr", "hr", "bs", "sq"]
+  },
+  {
+    "code_iso_3166-1": "MF",
+    "names": {
+      "local": ["Saint-Martin"],
+      "en-US": ["Saint Martin (French part)"]
+    },
+    "language_codes_iso_639-1": ["fr"]
+  },
+  {
+    "code_iso_3166-1": "MG",
+    "names": {
+      "local": ["Madagasikara", "Madagascar"],
+      "en-US": ["Madagascar"]
+    },
+    "language_codes_iso_639-1": ["mg", "fr"]
+  },
+  {
+    "code_iso_3166-1": "MH",
+    "names": {
+      "local": ["Marshall Islands"],
+      "en-US": ["Marshall Islands"]
+    },
+    "language_codes_iso_639-1": ["en", "mh"]
+  },
+  {
+    "code_iso_3166-1": "MK",
+    "names": {
+      "local": ["Македонија"],
+      "en-US": ["Macedonia (Former Yugoslav Republic of)"]
+    },
+    "language_codes_iso_639-1": ["mk"]
+  },
+  {
+    "code_iso_3166-1": "ML",
+    "names": {
+      "local": ["Mali"],
+      "en-US": ["Mali"]
+    },
+    "language_codes_iso_639-1": ["fr"]
+  },
+  {
+    "code_iso_3166-1": "MM",
+    "names": {
+      "local": ["မြန်မာ"],
+      "en-US": ["Myanmar"]
+    },
+    "language_codes_iso_639-1": ["my"]
+  },
+  {
+    "code_iso_3166-1": "MN",
+    "names": {
+      "local": ["Монгол Улс"],
+      "en-US": ["Mongolia"]
+    },
+    "language_codes_iso_639-1": ["mn"]
+  },
+  {
+    "code_iso_3166-1": "MO",
+    "names": {
+      "local": ["澳門", "Macau"],
+      "en-US": ["Macao (SAR of China)"]
+    },
+    "language_codes_iso_639-1": ["zh-hant", "pt"]
+  },
+  {
+    "code_iso_3166-1": "MP",
+    "names": {
+      "local": ["Northern Mariana Islands"],
+      "en-US": ["Northern Mariana Islands"]
+    },
+    "language_codes_iso_639-1": ["en", "ch"]
+  },
+  {
+    "code_iso_3166-1": "MQ",
+    "names": {
+      "local": ["Martinique"],
+      "en-US": ["Martinique"]
+    },
+    "language_codes_iso_639-1": ["fr"]
+  },
+  {
+    "code_iso_3166-1": "MR",
+    "names": {
+      "local": ["موريتانيا", "Mauritanie"],
+      "en-US": ["Mauritania"]
+    },
+    "language_codes_iso_639-1": ["ar", "fr"]
+  },
+  {
+    "code_iso_3166-1": "MS",
+    "names": {
+      "local": ["Montserrat"],
+      "en-US": ["Montserrat"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "MT",
+    "names": {
+      "local": ["Malta"],
+      "en-US": ["Malta"]
+    },
+    "language_codes_iso_639-1": ["mt", "en"]
+  },
+  {
+    "code_iso_3166-1": "MU",
+    "names": {
+      "local": ["Maurice", "Mauritius"],
+      "en-US": ["Mauritius"]
+    },
+    "language_codes_iso_639-1": ["mfe", "fr", "en"]
+  },
+  {
+    "code_iso_3166-1": "MV",
+    "names": {
+      "local": ["Maldives"],
+      "en-US": ["Maldives"]
+    },
+    "language_codes_iso_639-1": ["dv"]
+  },
+  {
+    "code_iso_3166-1": "MW",
+    "names": {
+      "local": ["Malawi"],
+      "en-US": ["Malawi"]
+    },
+    "language_codes_iso_639-1": ["en", "ny"]
+  },
+  {
+    "code_iso_3166-1": "MX",
+    "names": {
+      "local": ["México"],
+      "en-US": ["Mexico"]
+    },
+    "language_codes_iso_639-1": ["es"]
+  },
+  {
+    "code_iso_3166-1": "MY",
+    "names": {
+      "local": ["Malaysia"],
+      "en-US": ["Malaysia"]
+    },
+    "language_codes_iso_639-1": ["ms"]
+  },
+  {
+    "code_iso_3166-1": "MZ",
+    "names": {
+      "local": ["Mozambique"],
+      "en-US": ["Mozambique"]
+    },
+    "language_codes_iso_639-1": ["pt"]
+  },
+  {
+    "code_iso_3166-1": "NA",
+    "names": {
+      "local": ["Namibia"],
+      "en-US": ["Namibia"]
+    },
+    "language_codes_iso_639-1": ["en", "sf", "de"]
+  },
+  {
+    "code_iso_3166-1": "NC",
+    "names": {
+      "local": ["Nouvelle-Calédonie"],
+      "en-US": ["New Caledonia"]
+    },
+    "language_codes_iso_639-1": ["fr"]
+  },
+  {
+    "code_iso_3166-1": "NE",
+    "names": {
+      "local": ["Niger"],
+      "en-US": ["Niger"]
+    },
+    "language_codes_iso_639-1": ["fr"]
+  },
+  {
+    "code_iso_3166-1": "NF",
+    "names": {
+      "local": ["Norfolk Island"],
+      "en-US": ["Norfolk Island"]
+    },
+    "language_codes_iso_639-1": ["en", "pih"]
+  },
+  {
+    "code_iso_3166-1": "NG",
+    "names": {
+      "local": ["Nigeria"],
+      "en-US": ["Nigeria"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "NI",
+    "names": {
+      "local": ["Nicaragua"],
+      "en-US": ["Nicaragua"]
+    },
+    "language_codes_iso_639-1": ["es"]
+  },
+  {
+    "code_iso_3166-1": "NL",
+    "names": {
+      "local": ["Nederland"],
+      "en-US": ["The Netherlands"]
+    },
+    "language_codes_iso_639-1": ["nl"]
+  },
+  {
+    "code_iso_3166-1": "NO",
+    "names": {
+      "local": ["Norge", "Noreg"],
+      "en-US": ["Norway"]
+    },
+    "language_codes_iso_639-1": ["nb", "nn", "no", "se"]
+  },
+  {
+    "code_iso_3166-1": "NP",
+    "names": {
+      "local": ["Nepal"],
+      "en-US": ["Nepal"]
+    },
+    "language_codes_iso_639-1": ["ne"]
+  },
+  {
+    "code_iso_3166-1": "NR",
+    "names": {
+      "local": ["Nauru"],
+      "en-US": ["Nauru"]
+    },
+    "language_codes_iso_639-1": ["na", "en"]
+  },
+  {
+    "code_iso_3166-1": "NU",
+    "names": {
+      "local": ["Niue"],
+      "en-US": ["Niue"]
+    },
+    "language_codes_iso_639-1": ["niu", "en"]
+  },
+  {
+    "code_iso_3166-1": "NZ",
+    "names": {
+      "local": ["New Zealand"],
+      "en-US": ["New Zealand"]
+    },
+    "language_codes_iso_639-1": ["mi", "en"]
+  },
+  {
+    "code_iso_3166-1": "OM",
+    "names": {
+      "local": ["سلطنة عُمان"],
+      "en-US": ["Oman"]
+    },
+    "language_codes_iso_639-1": ["ar"]
+  },
+  {
+    "code_iso_3166-1": "PA",
+    "names": {
+      "local": ["Panama"],
+      "en-US": ["Panama"]
+    },
+    "language_codes_iso_639-1": ["es"]
+  },
+  {
+    "code_iso_3166-1": "PE",
+    "names": {
+      "local": ["Perú"],
+      "en-US": ["Peru"]
+    },
+    "language_codes_iso_639-1": ["es"]
+  },
+  {
+    "code_iso_3166-1": "PF",
+    "names": {
+      "local": ["Polynésie française"],
+      "en-US": ["French Polynesia"]
+    },
+    "language_codes_iso_639-1": ["fr"]
+  },
+  {
+    "code_iso_3166-1": "PG",
+    "names": {
+      "local": ["Papua New Guinea"],
+      "en-US": ["Papua New Guinea"]
+    },
+    "language_codes_iso_639-1": ["en", "tpi", "ho"]
+  },
+  {
+    "code_iso_3166-1": "PH",
+    "names": {
+      "local": ["Philippines"],
+      "en-US": ["Philippines"]
+    },
+    "language_codes_iso_639-1": ["en", "tl"]
+  },
+  {
+    "code_iso_3166-1": "PK",
+    "names": {
+      "local": ["پاکستان"],
+      "en-US": ["Pakistan"]
+    },
+    "language_codes_iso_639-1": ["en", "ur"]
+  },
+  {
+    "code_iso_3166-1": "PL",
+    "names": {
+      "local": ["Polska"],
+      "en-US": ["Poland"]
+    },
+    "language_codes_iso_639-1": ["pl"]
+  },
+  {
+    "code_iso_3166-1": "PM",
+    "names": {
+      "local": ["Saint-Pierre-et-Miquelon"],
+      "en-US": ["Saint Pierre and Miquelon"]
+    },
+    "language_codes_iso_639-1": ["fr"]
+  },
+  {
+    "code_iso_3166-1": "PN",
+    "names": {
+      "local": ["Pitcairn"],
+      "en-US": ["Pitcairn"]
+    },
+    "language_codes_iso_639-1": ["en", "pih"]
+  },
+  {
+    "code_iso_3166-1": "PR",
+    "names": {
+      "local": ["Puerto Rico"],
+      "en-US": ["Puerto Rico"]
+    },
+    "language_codes_iso_639-1": ["es", "en"]
+  },
+  {
+    "code_iso_3166-1": "PS",
+    "names": {
+      "local": ["Palestinian Territory"],
+      "en-US": ["Palestinian Territory"]
+    },
+    "language_codes_iso_639-1": ["ar", "he"]
+  },
+  {
+    "code_iso_3166-1": "PT",
+    "names": {
+      "local": ["Portugal"],
+      "en-US": ["Portugal"]
+    },
+    "language_codes_iso_639-1": ["pt"]
+  },
+  {
+    "code_iso_3166-1": "PW",
+    "names": {
+      "local": ["Palau"],
+      "en-US": ["Palau"]
+    },
+    "language_codes_iso_639-1": ["en", "pau", "ja", "sov", "tox"]
+  },
+  {
+    "code_iso_3166-1": "PY",
+    "names": {
+      "local": ["Paraguay"],
+      "en-US": ["Paraguay"]
+    },
+    "language_codes_iso_639-1": ["es", "gn"]
+  },
+  {
+    "code_iso_3166-1": "QA",
+    "names": {
+      "local": ["قطر"],
+      "en-US": ["Qatar"]
+    },
+    "language_codes_iso_639-1": ["ar"]
+  },
+  {
+    "code_iso_3166-1": "RE",
+    "names": {
+      "local": ["La Réunion"],
+      "en-US": ["Reunion"]
+    },
+    "language_codes_iso_639-1": ["fr"]
+  },
+  {
+    "code_iso_3166-1": "RO",
+    "names": {
+      "local": ["România"],
+      "en-US": ["Romania"]
+    },
+    "language_codes_iso_639-1": ["ro"]
+  },
+  {
+    "code_iso_3166-1": "RS",
+    "names": {
+      "local": ["Србија"],
+      "en-US": ["Serbia"]
+    },
+    "language_codes_iso_639-1": ["sr", "sr-Latn"]
+  },
+  {
+    "code_iso_3166-1": "RU",
+    "names": {
+      "local": ["Россия"],
+      "en-US": ["Russia"]
+    },
+    "language_codes_iso_639-1": ["ru"]
+  },
+  {
+    "code_iso_3166-1": "RW",
+    "names": {
+      "local": ["Rwanda"],
+      "en-US": ["Rwanda"]
+    },
+    "language_codes_iso_639-1": ["rw", "fr", "en"]
+  },
+  {
+    "code_iso_3166-1": "SA",
+    "names": {
+      "local": ["السعودية"],
+      "en-US": ["Saudi Arabia"]
+    },
+    "language_codes_iso_639-1": ["ar"]
+  },
+  {
+    "code_iso_3166-1": "SB",
+    "names": {
+      "local": ["Solomon Islands"],
+      "en-US": ["Solomon Islands"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "SC",
+    "names": {
+      "local": ["Seychelles"],
+      "en-US": ["Seychelles"]
+    },
+    "language_codes_iso_639-1": ["fr", "en", "crs"]
+  },
+  {
+    "code_iso_3166-1": "SD",
+    "names": {
+      "local": ["السودان"],
+      "en-US": ["Sudan"]
+    },
+    "language_codes_iso_639-1": ["ar", "en"]
+  },
+  {
+    "code_iso_3166-1": "SE",
+    "names": {
+      "local": ["Sverige"],
+      "en-US": ["Sweden"]
+    },
+    "language_codes_iso_639-1": ["sv"]
+  },
+  {
+    "code_iso_3166-1": "SG",
+    "names": {
+      "local": ["Singapore"],
+      "en-US": ["Singapore"]
+    },
+    "language_codes_iso_639-1": ["zh-hans", "en", "ms", "ta"]
+  },
+  {
+    "code_iso_3166-1": "SH",
+    "names": {
+      "local": ["Saint Helena"],
+      "en-US": ["Saint Helena"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "SI",
+    "names": {
+      "local": ["Slovenija"],
+      "en-US": ["Slovenia"]
+    },
+    "language_codes_iso_639-1": ["sl"]
+  },
+  {
+    "code_iso_3166-1": "SJ",
+    "names": {
+      "local": ["Svalbard and Jan Mayen"],
+      "en-US": ["Svalbard and Jan Mayen"]
+    },
+    "language_codes_iso_639-1": ["no"]
+  },
+  {
+    "code_iso_3166-1": "SK",
+    "names": {
+      "local": ["Slovensko"],
+      "en-US": ["Slovakia"]
+    },
+    "language_codes_iso_639-1": ["sk"]
+  },
+  {
+    "code_iso_3166-1": "SL",
+    "names": {
+      "local": ["Sierra Leone"],
+      "en-US": ["Sierra Leone"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "SM",
+    "names": {
+      "local": ["San Marino"],
+      "en-US": ["San Marino"]
+    },
+    "language_codes_iso_639-1": ["it"]
+  },
+  {
+    "code_iso_3166-1": "SN",
+    "names": {
+      "local": ["Sénégal"],
+      "en-US": ["Sénégal"]
+    },
+    "language_codes_iso_639-1": ["fr"]
+  },
+  {
+    "code_iso_3166-1": "SO",
+    "names": {
+      "local": ["Somalia", "الصومال"],
+      "en-US": ["Somalia"]
+    },
+    "language_codes_iso_639-1": ["so", "ar"]
+  },
+  {
+    "code_iso_3166-1": "SR",
+    "names": {
+      "local": ["Suriname"],
+      "en-US": ["Suriname"]
+    },
+    "language_codes_iso_639-1": ["nl"]
+  },
+  {
+    "code_iso_3166-1": "SS",
+    "names": {
+      "local": ["South Sudan"],
+      "en-US": ["South Sudan"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "ST",
+    "names": {
+      "local": ["São Tomé e Príncipe"],
+      "en-US": ["São Tomé and Príncipe"]
+    },
+    "language_codes_iso_639-1": ["pt"]
+  },
+  {
+    "code_iso_3166-1": "SV",
+    "names": {
+      "local": ["El Salvador"],
+      "en-US": ["El Salvador"]
+    },
+    "language_codes_iso_639-1": ["es"]
+  },
+  {
+    "code_iso_3166-1": "SX",
+    "names": {
+      "local": ["Sint Maarten"],
+      "en-US": ["Saint Martin (Dutch part)"]
+    },
+    "language_codes_iso_639-1": ["nl", "en"]
+  },
+  {
+    "code_iso_3166-1": "SY",
+    "names": {
+      "local": ["سوريا", "Sūriyya"],
+      "en-US": ["Syria"]
+    },
+    "language_codes_iso_639-1": ["ar"]
+  },
+  {
+    "code_iso_3166-1": "SZ",
+    "names": {
+      "local": ["Swaziland"],
+      "en-US": ["Swaziland"]
+    },
+    "language_codes_iso_639-1": ["en", "ss"]
+  },
+  {
+    "code_iso_3166-1": "TC",
+    "names": {
+      "local": ["Turks and Caicos Islands"],
+      "en-US": ["Turks and Caicos Islands"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "TD",
+    "names": {
+      "local": ["Tchad", "تشاد"],
+      "en-US": ["Chad"]
+    },
+    "language_codes_iso_639-1": ["fr", "ar"]
+  },
+  {
+    "code_iso_3166-1": "TF",
+    "names": {
+      "local": ["Terres australes et antarctiques françaises"],
+      "en-US": ["French Southern and Antarctic Lands"]
+    },
+    "language_codes_iso_639-1": ["fr"]
+  },
+  {
+    "code_iso_3166-1": "TG",
+    "names": {
+      "local": ["Togo"],
+      "en-US": ["Togo"]
+    },
+    "language_codes_iso_639-1": ["fr"]
+  },
+  {
+    "code_iso_3166-1": "TH",
+    "names": {
+      "local": ["ประเทศไทย"],
+      "en-US": ["Thailand"]
+    },
+    "language_codes_iso_639-1": ["th"]
+  },
+  {
+    "code_iso_3166-1": "TJ",
+    "names": {
+      "local": [","],
+      "en-US": ["Tajikistan"]
+    },
+    "language_codes_iso_639-1": ["tg", "ru"]
+  },
+  {
+    "code_iso_3166-1": "TK",
+    "names": {
+      "local": ["Tokelau"],
+      "en-US": ["Tokelau"]
+    },
+    "language_codes_iso_639-1": ["tkl", "en", "sm"]
+  },
+  {
+    "code_iso_3166-1": "TL",
+    "names": {
+      "local": ["Timor-Leste", "Timor Lorosa'e"],
+      "en-US": ["Timor-Leste"]
+    },
+    "language_codes_iso_639-1": ["pt", "tet"]
+  },
+  {
+    "code_iso_3166-1": "TM",
+    "names": {
+      "local": ["Türkmenistan"],
+      "en-US": ["Turkmenistan"]
+    },
+    "language_codes_iso_639-1": ["tk"]
+  },
+  {
+    "code_iso_3166-1": "TN",
+    "names": {
+      "local": ["تونس", "Tunisie"],
+      "en-US": ["Tunisia"]
+    },
+    "language_codes_iso_639-1": ["ar", "fr"]
+  },
+  {
+    "code_iso_3166-1": "TO",
+    "names": {
+      "local": ["Tonga"],
+      "en-US": ["Tonga"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "TR",
+    "names": {
+      "local": ["Türkiye"],
+      "en-US": ["Turkey"]
+    },
+    "language_codes_iso_639-1": ["tr"]
+  },
+  {
+    "code_iso_3166-1": "TT",
+    "names": {
+      "local": ["Trinidad and Tobago"],
+      "en-US": ["Trinidad and Tobago"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "TV",
+    "names": {
+      "local": ["Tuvalu"],
+      "en-US": ["Tuvalu"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "TW",
+    "names": {
+      "local": ["Taiwan"],
+      "en-US": ["Taiwan"]
+    },
+    "language_codes_iso_639-1": ["zh-hant"]
+  },
+  {
+    "code_iso_3166-1": "TZ",
+    "names": {
+      "local": ["Tanzania"],
+      "en-US": ["Tanzania"]
+    },
+    "language_codes_iso_639-1": ["sw", "en"]
+  },
+  {
+    "code_iso_3166-1": "UA",
+    "names": {
+      "local": ["Україна"],
+      "en-US": ["Ukraine"]
+    },
+    "language_codes_iso_639-1": ["uk"]
+  },
+  {
+    "code_iso_3166-1": "UG",
+    "names": {
+      "local": ["Uganda"],
+      "en-US": ["Uganda"]
+    },
+    "language_codes_iso_639-1": ["en", "sw"]
+  },
+  {
+    "code_iso_3166-1": "UM",
+    "names": {
+      "local": ["United States Minor Outlying Islands"],
+      "en-US": ["United States Minor Outlying Islands"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "US",
+    "names": {
+      "local": ["United States of America"],
+      "en-US": ["United States of America"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "UY",
+    "names": {
+      "local": ["Uruguay"],
+      "en-US": ["Uruguay"]
+    },
+    "language_codes_iso_639-1": ["es"]
+  },
+  {
+    "code_iso_3166-1": "UZ",
+    "names": {
+      "local": ["Uzbekistan"],
+      "en-US": ["Uzbekistan"]
+    },
+    "language_codes_iso_639-1": ["uz", "kaa"]
+  },
+  {
+    "code_iso_3166-1": "VA",
+    "names": {
+      "local": ["Città del Vaticano"],
+      "en-US": ["City of the Vatican"]
+    },
+    "language_codes_iso_639-1": ["it"]
+  },
+  {
+    "code_iso_3166-1": "VC",
+    "names": {
+      "local": ["Saint Vincent and the Grenadines"],
+      "en-US": ["Saint Vincent and the Grenadines"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "VE",
+    "names": {
+      "local": ["Venezuela"],
+      "en-US": ["Venezuela"]
+    },
+    "language_codes_iso_639-1": ["es"]
+  },
+  {
+    "code_iso_3166-1": "VG",
+    "names": {
+      "local": ["British Virgin Islands"],
+      "en-US": ["British Virgin Islands"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "VI",
+    "names": {
+      "local": ["United States Virgin Islands"],
+      "en-US": ["United States Virgin Islands"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "VN",
+    "names": {
+      "local": ["Việt Nam"],
+      "en-US": ["Vietnam"]
+    },
+    "language_codes_iso_639-1": ["vi"]
+  },
+  {
+    "code_iso_3166-1": "VU",
+    "names": {
+      "local": ["Vanuatu"],
+      "en-US": ["Vanuatu"]
+    },
+    "language_codes_iso_639-1": ["bi", "en", "fr"]
+  },
+  {
+    "code_iso_3166-1": "WF",
+    "names": {
+      "local": ["Wallis-et-Futuna"],
+      "en-US": ["Wallis and Futuna"]
+    },
+    "language_codes_iso_639-1": ["fr"]
+  },
+  {
+    "code_iso_3166-1": "WS",
+    "names": {
+      "local": ["Samoa"],
+      "en-US": ["Samoa"]
+    },
+    "language_codes_iso_639-1": ["sm", "en"]
+  },
+  {
+    "code_iso_3166-1": "YE",
+    "names": {
+      "local": ["اليَمَن"],
+      "en-US": ["Yemen"]
+    },
+    "language_codes_iso_639-1": ["ar"]
+  },
+  {
+    "code_iso_3166-1": "YT",
+    "names": {
+      "local": ["Mayotte"],
+      "en-US": ["Mayotte"]
+    },
+    "language_codes_iso_639-1": ["fr"]
+  },
+  {
+    "code_iso_3166-1": "ZA",
+    "names": {
+      "local": ["South Africa"],
+      "en-US": ["South Africa"]
+    },
+    "language_codes_iso_639-1": ["en", "af", "st", "tn", "xh", "zu"]
+  },
+  {
+    "code_iso_3166-1": "ZM",
+    "names": {
+      "local": ["Zambia"],
+      "en-US": ["Zambia"]
+    },
+    "language_codes_iso_639-1": ["en"]
+  },
+  {
+    "code_iso_3166-1": "ZW",
+    "names": {
+      "local": ["Zimbabwe"],
+      "en-US": ["Zimbabwe"]
+    },
+    "language_codes_iso_639-1": ["en", "sn", "nd"]
+  }
+]

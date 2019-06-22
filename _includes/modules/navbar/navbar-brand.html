@@ -1,0 +1,34 @@
+{%- assign config = page.navbar_brand -%}
+{%- assign name = config.name.text | default: site.title | strip | escape -%}
+
+{%- comment -%}
+{%- assign index_doc = site.pages | where: 'path', 'index.md' | first -%}
+{%- assign link_href = index_doc.url | default: '/' -%}
+{%- if lang and index_doc and index_doc.translation_ref -%}
+{%- assign local_index_doc = site.pages | where: 'translation_ref', index_doc.translation_ref | where: 'lang', lang  | first -%}
+{%- assign link_href = local_index_doc.url | default: link_href -%}
+{%- endif -%}
+{%- endcomment -%}
+{%- include helpers/local-document.html path='index.md' collection='pages' -%}
+{%- assign link_href = url | default: '/' -%}
+
+<a class="navbar-brand {{ include.class }}" rel="author" href="{{ link_href | relative_url }}">
+
+  {%- if config.image.src -%}
+  <img src="{{ config.image.src | relative_url }}" {% if config.image.width %}width="{{ config.image.width }}"{% endif %} {% if config.image.height %}height="{{ config.image.height }}"{% endif %} class="{{ config.image.class | default: 'd-inline-block align-top' }}" alt="{{ t.logo }} {{ name }}" title="{{ t.home }}">
+  {%- endif -%}
+
+  {%- if name.size > 0 -%}
+  {%- assign n = name.size | minus: 1 -%}
+  <span {% if config.name.class %}class="{{ config.name.class }}"{% endif %}>
+  {%- for i in (0..n) -%}
+  <span class="d-inline-block">{{ name | slice: i }}</span>
+  {%- endfor -%}
+  </span>
+  {%- endif -%}
+
+  {%- if jekyll.environment != 'production' -%}
+  <sup><small class="badge badge-warning text-uppercase ml-1">{{ t[jekyll.environment] | default: jekyll.environment }}</small></sup>
+  {%- endif -%}
+
+</a>

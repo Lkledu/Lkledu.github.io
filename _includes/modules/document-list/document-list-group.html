@@ -1,0 +1,25 @@
+{%- if include.posts -%}
+<div {% if include.id %}id="{{ include.id }}"{% endif %} class="list-group list-group-flush" {{ include.attributs }}>
+  {%- for post in include.posts -%}
+
+  {%- capture item_attributes -%}{{ include.item_attributes }} {% if page.lunr.ref and post[page.lunr.ref] %}data-lunr-ref="{{ post[page.lunr.ref] }}"{% endif %}{% endcapture %}
+
+  <div class="-p-0 d-flex justify-content-between align-items-center">
+    <a class="list-group-item list-group-item-action w-100 -p-3" href="{{ post.url | relative_url }}" title="{{ t.read_more }}" {{ item_attributes }}>
+      <div class="d-flex justify-content-between align-items-center">
+        <h5 class="mb-1">{{ post.title | escape }}</h5>
+        <small class="text-muted">{%- include modules/article/metas.html -%}</small>
+      </div>
+      {%- if page.show_excerpts != false -%}
+        <p class="mb-1">{{ post.description | default: post.excerpt }}</p>
+      {%- endif -%}
+    </a>
+    {%- if post.features.selection != false -%}
+    <div class="d-flex justify-content-between align-items-center p-3 text-small text-muted">
+    {%- include modules/filters/user-selection-checkbox.html -%}
+    </div>
+    {%- endif -%}
+  </div>
+  {%- endfor -%}
+</div>
+{%- endif -%}

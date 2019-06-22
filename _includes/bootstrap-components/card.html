@@ -1,0 +1,235 @@
+
+{%- assign config = page.card -%}
+{%- assign post = include.post -%}
+
+{%- assign categories = post.categories | split: ' ' | uniq | compact | sort_natural -%}
+{%- assign tags = post.tags | split: ' ' | uniq | compact | sort_natural -%}
+
+{%- assign today = site.time | date: '%s' -%}
+{%- assign date = post.date | date: '%s' -%}
+{%- assign seconds_since = today | minus: date -%}
+{%- assign hours_since = seconds_since | divided_by: 60 | divided_by: 60 -%}
+{%- assign days_since = hours_since | divided_by: 24 -%}
+
+{%- assign card_classes = 'card' | split: ' ' -%}
+{%- assign btn_style = 'btn' -%}
+
+{%- if include.face != 'back' -%}
+
+
+{%- if config.image_display != false -%}
+{%- assign src = post.image -%}
+{%- endif -%}
+
+{%- if src and include.face != 'back' -%}
+{%- assign card_img_classes = 'img-fluid lazyload' | split: ' ' -%}
+{%- assign card_img_attributes = '' | split: ' ' -%}
+{%- if post.image.width -%}
+{%- capture attribute -%}width="{{ default: post.image.width }}"{%- endcapture -%}
+{%- assign card_img_attributes = card_img_attributes | push: attribute -%}
+{%- endif -%}
+{%- if post.image.height -%}
+{%- capture attribute -%}height="{{ post.image.height }}"{%- endcapture -%}
+{%- assign card_img_attributes = card_img_attributes | push: attribute -%}
+{%- endif -%}
+{%- if config.image.position == 'top' or config.image.position == 'bottom' -%}
+{%- capture class -%}card-img-{{ config.image.position }}{%- endcapture -%}
+{%- assign card_img_classes = card_img_classes | push: class -%}
+{%- else -%}
+{%- assign card_img_classes = card_img_classes | push: 'card-img' -%}
+{%- endif -%}
+{%- if include.img_class.first -%}
+{%- assign card_img_classes = include.img_class | split: ' ' | concat: card_img_classes -%}
+{%- endif -%}
+{%- if config.image.parent_fit -%}
+{%- capture attributes -%}data-sizes="auto" data-parent-fit="{{ config.image.parent_fit | default: 'cover' }}"{%- endcapture -%}
+{%- assign card_img_attributes = attributes | split: ' ' | concat: card_img_attributes -%}
+{%- endif -%}
+{%- if config.image.aspect_ratio -%}
+{%- capture attributes -%}data-sizes="auto" data-aspectratio="{{ config.image.aspect_ratio | default: '2/1' }}"{%- endcapture -%}
+{%- assign card_img_attributes = attributes | split: ' ' | concat: card_img_attributes -%}
+{%- endif -%}
+{%- endif -%}
+
+{%- endif -%}
+
+{%- if include.face -%}
+{%- capture class -%}{{ include.face }}-face{%- endcapture -%}
+{%- assign card_classes = card_classes | push: class -%}
+{%- endif -%}
+
+{%- if include.class -%}
+{%- assign card_classes = include.class | split: ' ' | concat: card_classes -%}
+{%- endif -%}
+
+{%- assign card_body_classes = 'd-flex flex-column' | split: ' ' -%}
+{%- if include.body_class.first -%}
+{%- assign card_body_classes = include.body_class | split: ' ' | concat: card_body_classes -%}
+{%- endif -%}
+{%- if src and include.face != 'back' -%}
+{%- if config.image.position == 'top' or config.image.position == 'bottom' -%}
+{%- assign card_body_classes = card_body_classes | push: 'card-body' -%}
+{%- else -%}
+{%- assign card_body_classes = card_body_classes | push: 'card-img-overlay' -%}
+{%- assign btn_style = 'btn-outline' -%}
+{%- endif -%}
+{%- else -%}
+{%- assign card_body_classes = card_body_classes | push: 'card-body' -%}
+{%- endif -%}
+
+{%- if include.face == 'front' -%}
+{%- assign card_body_classes = 'justify-content-center align-items-center' | split: ' ' | concat: card_body_classes -%}
+{%- else -%}
+{%- if config.text_align -%}
+{%- capture class -%}justify-content-{{ config.text_align }}{%- endcapture -%}
+{%- assign card_body_classes = card_body_classes | push: class -%}
+{%- endif -%}
+{%- if config.vertical_align -%}
+{%- assign card_body_classes = 'h-100 align-items-' | append: config.vertical_align | split: ' ' | concat: card_body_classes -%}
+{%- endif -%}
+{%- endif -%}
+
+{%- assign title = include.title | default: post.title | split: ':' | last | strip -%}
+{%- assign subtitle = include.title | default: post.title | split: ':' | first | strip -%}
+{%- assign subtitle = post.subtitle | default: subtitle -%}
+{%- if subtitle == title -%}
+{%- assign subtitle = nil -%}
+{%- endif -%}
+{%- assign text = include.text | default: post.description | default: post.excerpt -%}
+
+{%- assign card_title_classes = 'card-title' | split: ' ' -%}
+{%- if include.title_class -%}
+{%- assign card_title_classes = include.title_class | split: ' ' | concat: card_title_classes -%}
+{%- endif -%}
+
+{%- if card_classes contains 'bg-primary' or card_classes contains 'bg-secondary' or card_classes contains 'bg-success' or card_classes contains 'bg-danger' or card_classes contains 'bg-info' or card_classes contains 'bg-dark' or card_classes contains 'bg-gradient-primary' or card_classes contains 'bg-gradient-secondary' or card_classes contains 'bg-gradient-success' or card_classes contains 'bg-gradient-danger' or card_classes contains 'bg-gradient-info' or card_classes contains 'bg-gradient-dark' -%}
+{%- assign btn_style = btn_style | append: '-light' -%}
+{%- assign progress_style = 'bg-white' -%}
+{%- else -%}
+{%- assign btn_style = btn_style | append: '-dark' -%}
+{%- assign progress_style = 'bg-dark' -%}
+{%- endif -%}
+
+{%- assign card_footer_classes = 'card-footer' | split: ' ' -%}
+{%- unless config.image.position == 'top' or config.image.position == 'bottom' -%}
+{%- assign card_footer_classes = card_footer_classes | push: 'navbar-dark' -%}
+{%- endunless -%}
+
+{%- assign link_type = include.link_type | default: config.link_type -%}
+{%- if link_type == 'button' -%}
+{%- assign link_classes = 'btn' | split: ' ' | push: btn_style -%}
+{%- elsif link_type == 'link' -%}
+{%- assign link_classes = 'card-link' | split: ' ' -%}
+{%- else -%}
+{%- assign link_classes = 'btn' | split: ' ' | push: btn_style -%}
+{%- endif -%}
+
+{%- assign link_text = include.link_text | config.link_text | default: t.read_more -%}
+{%- assign link_href = include.link_href | default: post.url -%}
+{%- assign link_icon_class = include.link_icon_class | default: config.link_icon_class -%}
+
+<div class="{{ card_classes | uniq | compact | join: ' ' }}" >
+
+  {%- if src and include.face != 'back' -%}
+  {%- comment -%}<div class="ratio-container unknown-ratio-container"></div>{%- endcomment -%}
+    <img class="{{ card_img_classes | uniq | compact | join: ' ' }}" src="{{ src | relative_url }}" alt="{{ post.title }}" {{ card_img_attributes | uniq | compact | join: ' ' }} />
+  {%- endif -%}
+
+  {%- comment -%}
+  {%- if config.image.position == 'overlay' -%}
+  <div class="card-img-overlay">
+  {%- endif -%}
+  {%- endcomment -%}
+
+  <div class="{{ card_body_classes | uniq | compact | join: ' ' }}">
+
+    {%- if subtitle and include.face != 'back' -%}
+    <h6 class="card-subtitle">{{ subtitle | escape }}</h6>
+    {%- endif -%}
+
+    {%- if title and include.face != 'back' -%}
+    <h4 class="{{ card_title_classes | uniq | compact | join: ' ' }}">
+      {%- if config.title_link -%}
+      <a class="card-link" href="{{ link_href | relative_url }}">{{ title | escape }}</a>
+      {%- else -%}
+      {{ title | escape }}
+      {%- endif -%}
+    </h4>
+    {%- endif -%}
+
+    {%- if text and include.face != 'front' -%}
+    <p class="card-text">{{ text }}</p>
+    {%- endif -%}
+
+    {%- if config.categories_display and categories and include.face != 'front' or config.tags_display and tags and include.face != 'front' -%}
+    <div>
+      {%- if config.categories_display and categories and include.face != 'front' -%}
+      <span class="d-inline-block mr-1 hidden-sm visible-xs">{%- include partials/tag-list-inline.html array=categories item_class="badge badge-primary" -%}</span>
+      {%- endif -%}
+      {%- if config.tags_display and tags and include.face != 'front' -%}
+      <span class="d-inline-block mr-1 hidden-sm visible-xs">{%- include partials/tag-list-inline.html array=tags item_class="badge badge-secondary" -%}</span>
+      {%- endif -%}
+    </div>
+    {%- endif -%}
+
+    {%- if link_classes and config.link_container == 'body' and include.face != 'front' -%}
+    <p>
+      <a href="{{ link_href | relative_url }}" class="{{ link_classes | uniq | compact | join: ' ' }}">
+        {%- if link_icon_class -%}
+        <i class="{{ link_icon_class }}" aria-hidden="true"></i>
+        {%- endif -%}
+        {{ link_text | escape }}
+      </a>
+    </p>
+    {%- endif -%}
+
+  </div>
+
+
+  {%- if config.date_display or config.categories_display or config.tags_display or config.link_container != 'body' or include.face == 'front' or include.face == 'back' -%}
+  <div class="{{ card_footer_classes | uniq | compact | join: ' ' }}">
+
+    <div class="d-flex justify-content-between align-items-center">
+
+      {%- if include.face == 'front' -%}
+      <label for="flipcard_position_{{ link_href | slugify: 'default' }}" class="btn {{ btn_style }} mb-0" title="{{ t.details }}" aria-label="{{ t.details }}">
+        <span class="fas fa-info fa-fw" aria-hidden="true"></span>
+      </label>
+      {%- endif -%}
+      {%- if include.face == 'back' -%}
+      <button type="button" class="btn {{ btn_style }} mb-0 flipcard-toggler" title="{{ t.close }}" aria-label="{{ t.close }}">
+        <span class="fas fa-times fa-fw" aria-hidden="true"></span>
+      </button>
+      {%- endif -%}
+
+      {%- if post.date and config.date_display and include.face != 'front' -%}<small class="font-weight-light float-right">{{ post.date | date: "%b %-d, %Y" }}</small>{%- endif -%}
+      {%- if config.new and days_since <= config.new and include.face != 'back' -%}<small class="font-weight-light float-right">{%- if days_since == 1 -%}{{ days_since | format: t.last_modified_1_day_ago }}{%- else -%}{{ days_since | format: t.last_modified_d_days_ago }}{%- endif -%}</small>{%- endif -%}
+
+      {%- if link_classes and config.link_container != 'body' -%}
+      <a href="{{ link_href | relative_url }}" class="{{ link_classes | uniq | compact | join: ' ' }} mb-0" title="{{ config.read_more | default: t.read_more }}" aria-label="{{ config.read_more | default: t.read_more }}">
+        {%- if link_icon_class -%}
+        <span class="{{ link_icon_class }}" aria-hidden="true"></span>
+        {%- endif -%}
+      </a>
+      {%- endif -%}
+
+      {%- include modules/filters/user-selection-checkbox.html -%}
+
+    </div>
+
+    {%- if config.progress_display and include.face != 'back' -%}
+    <div class="progress {{ progress_style }} mt-2" data-id="{{ link_href.url | slugify }}" title="{{ t.progress }}">
+      <div class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    {%- endif -%}
+
+  </div>
+  {%- endif -%}
+
+  {%- comment -%}
+  {%- if config.image.position == 'overlay' -%}
+  </div>
+  {%- endif -%}
+  {%- endcomment -%}
+
+</div>

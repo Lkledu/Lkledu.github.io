@@ -1,0 +1,59 @@
+$first: 1 !default; // First item
+$last: 5 !default; // Last item before repeat
+
+// Default values (integer) for the random function
+$angle-min: -15 !default; // 0-360
+$angle-max: 15 !default; // 0-360
+$opacity-min: 70 !default; // 0-100
+$opacity-max: 100 !default; // 0-100
+$duration-min: 1 !default; // > 0
+$duration-max: 2 !default; // > 0
+$color-max: 255 !default; // max 255
+$color-min: 100 !default; // min 0
+$font-size-min: 70 !default; // 0-100
+$font-size-max: 100 !default; // 0-100+
+
+.random-rotate {
+  @for $i from $first through $last {
+    & > div:nth-of-type(#{$last}n+#{$i}),
+    & > span:nth-of-type(#{$last}n+#{$i}) {
+      transform: rotateX(($angle-min + random($angle-max - $angle-min)) * 1deg) rotateY(($angle-min + random($angle-max - $angle-min)) * 1deg) rotateZ(($angle-min + random($angle-max - $angle-min)) * 1deg);
+    }
+  }
+}
+
+.random-font-size {
+  @for $i from $first through $last {
+    & > div:nth-of-type(#{$last}n+#{$i}),
+    & > span:nth-of-type(#{$last}n+#{$i}) {
+      font-size: ($font-size-min + random($font-size-max - $font-size-min) * 1%);
+    }
+  }
+}
+
+.random-transition {
+  @for $i from $first through $last {
+    & > div:nth-of-type(#{$last}n+#{$i}),
+    & > span:nth-of-type(#{$last}n+#{$i}) {
+      transition: ($duration-min + random($duration-max - $duration-min)) * 1s;
+    }
+  }
+}
+
+.random-opacity {
+  @for $i from $first through $last {
+    & > div:nth-of-type(#{$last}n+#{$i}),
+    & > span:nth-of-type(#{$last}n+#{$i}) {
+      opacity: ($opacity-min + random($opacity-max - $opacity-min)) / 100;
+    }
+  }
+}
+
+.random-color {
+  @for $i from $first through $last {
+    & > div:nth-of-type(#{$last}n+#{$i}),
+    & > span:nth-of-type(#{$last}n+#{$i}) {
+      color: rgb($color-min + random($color-max - $color-min), $color-min + random($color-max - $color-min), $color-min + random($color-max - $color-min));
+    }
+  }
+}

@@ -1,0 +1,4 @@
+---
+---
+{%- assign docs = site.documents | where_exp: 'item', 'item.layout != nil' -%}
+{%-include helpers/lunr-documents.json docs=docs -%}

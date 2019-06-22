@@ -1,0 +1,48 @@
+{%- if page.alerts and page.alerts.size > 0 -%}
+{%- assign alerts = site.alerts | where_exp: "item", "page.alerts contains item.path" -%}
+{%- for alert in alerts -%}
+
+{%- comment -%}
+{% if lang and alert.translation_ref and alert.lang != lang %}
+{%- assign alert = site.alerts | where: "translation_ref", alert.translation_ref | where: 'lang', lang | first -%}
+{% endif %}
+{%- endcomment -%}
+{%- include helpers/local-document.html doc=alert -%}
+
+{%- comment -%}
+{%- assign alert_id = alert.path | slugify -%}
+{%- assign alert_content = alert.content | markdownify -%}
+{%- include bootstrap-components/alert.html title=alert.title content=alert_content style=alert.alert.style id=alert_id dismissible=alert.dismissible -%}
+{%- endcomment -%}
+{%- include bootstrap-components/alert.html alert=doc extra_class="mb-3" -%}
+{%- endfor -%}
+{%- endif -%}
+
+{% if posts and posts.size > 0 %}
+{%- assign attributes = '' -%}
+{% else %}
+{%- assign attributes = 'hidden' -%}
+{% endif %}
+{%- include bootstrap-components/alert.html id='search-message' excerpt=t.no_result class='alert alert-warning' extra_class="mb-3" attributes=attributes-%}
+
+{%- if page.collection == 'brands' -%}
+{%- unless page.website or page.shop or page.store_finder or page.about -%}
+<div class="alert alert-info animated flipInX" role="alert">
+    It seems that we don't have much information to fill that page. Perhaps you could start searching on <a href="https://www.google.com/search?hl=en&as_q={{ page.title | url_encode }}&as_epq=&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=lang_en&cr=&as_qdr=all&as_sitesearch=&as_occt=any&safe=images&as_filetype=&as_rights=" target="_blank" role="presentation">Google</a>?
+    {%- if page.aliases.size > 0 -%}
+    Think to make a search with the different namings like <strong>{{ page.aliases | join: '</strong>, <strong>'}}</strong>.
+    {%- endif -%}
+</div>
+{%- endunless -%}
+{%- endif -%}
+
+{%- if page.collection == 'products' -%}
+{%- unless page.dealers.size > 0 -%}
+<div class="alert alert-info animated flipInX" role="alert">
+    There is no listed dealers for this product. Perhaps you could start searching on <a class="dealer" href="https://www.amazon.com/s/?field-keywords={{ page.title | url_encode }}" target="_blank">Amazon</a>?
+    {%- if page.aliases.size > 0 -%}
+    Think to make a search with the different namings like <strong>{{ page.aliases | join: '</strong>, <strong>'}}</strong>.
+    {%- endif -%}
+</div>
+{%- endunless -%}
+{%- endif -%}

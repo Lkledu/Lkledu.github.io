@@ -1,31 +1,56 @@
 ---
+#
+# By default, content added below the "---" mark will appear in the home page
+# between the top bar and the list of recent posts.
+# To change the home page layout, edit the _layouts/home.html file.
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+#
 layout: home
-tags_summary:
-- C#
-- C++
-- Angular
-- Unity
-- Math
-- Data-Structure
-- Algorithm
-- Java
-- Database
-- 3D model
+#permalink: /
+lang: en-US
+translation_ref: index.md
+
+features:
+  card: true
+  flipcard: true
+  lunr: true
+  document_list: true
+  social_icons: true
+
+body:
+  class: 'pt-0'
+
+top_navbar:
+  modules: ['modules/navbar/navbar-brand.html']
+  #position: ''
+
+#action_nav:
+#  modules: [modules/bottom_navbar/comments-toggler.html, modules/navbar/navbar-secondary-nav.html, modules/bottom_navbar/tip-link.html, modules/navbar/navbar-social-icons.html, modules/bottom_navbar/settings-toggler.html, modules/nav/language-switcher.html]
+  #class: 'navbar navbar-light bg-light d-flex flex-row justify-content-between w-100 animated fadeInUp'
+  #position: 'fixed-bottom'
+
+sidebar:
+  modules: ['modules/sidebar/vertical-primary-nav.html']
+
+document_list:
+  module: 'modules/document-list/document-list-group.html'
+
+jumbotron:
+  title: 'Hello, world!'
+  lead: 'Here is the most overkilled theme for Jekyll.'
+  description:
+  class:
+  button:
+    class: 'btn btn-primary btn-lg'
+    text: 'Next'
+    href: '#next'
+    icon:
+      class: 'fas fa-chevron-right fa-lg mr-1'
+
+nav_item:
+  group: "primary-nav"
+  position: 1
+  label: "Home"
+  icon:
+    class: 'fa-home'
 ---
-
-Teste..
-Blog onde escrevo sobre meus projetos e oque estou estudando
-
-<html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <title>Lkledu.io</title>
-    </head>
-    <body>
-        <ul>
-        {% for item in page.tags_summary%}
-        <li>{{item}}</li>
-        {% endfor %}
-        </ul>
-    </body>
-</html>

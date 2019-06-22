@@ -1,0 +1,37 @@
+{%- comment -%}
+{%- assign config = page.article -%}
+{%- assign post = include.post | default: page -%}
+
+{%- if include.post -%}
+{%- assign post = include.post -%}
+{%- endif -%}
+
+{%- assign title = include.title | default: post.title -%}
+{%- assign subtitle = include.subtitle | default: post.subtitle -%}
+{%- endcomment -%}
+
+{%- if page.article_header.modules and page.article_header.modules.first -%}
+<header>
+
+
+  {%- comment -%}
+  {%- assign ids = '' | split: '' -%}
+  {%- for id in 'date author categories tags' | split: ' ' -%}
+  {%- if config[{{ id | append: '_display' }}] != false -%}
+  {%- assign ids = ids | push: id -%}
+  {%- endif -%}
+  {%- endfor -%}
+  {%- endcomment -%}
+
+  {%- comment -%}
+  {%- if config.metas_position != 'footer' -%}
+    {%- include modules/article/metas.html container_class="list-inline small text-muted" item_class="list-inline-item" -%}
+  {%- endif -%}
+  {%- endcomment -%}
+
+  {%- for path in page.article_header.modules -%}
+  {%- include {{ path }} class="mb-1" -%}
+  {%- endfor -%}
+
+</header>
+{%- endif -%}

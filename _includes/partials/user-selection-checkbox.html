@@ -1,0 +1,22 @@
+{%- assign post = include.post | default: page -%}
+{%- assign type = post.collection | default: post.type | default: nil -%}
+{%- if post and type -%}
+{%- assign id = post.path | slugify -%}
+<div class="form-group form-check">
+  <div class="custom-control custom-checkbox">
+      <input id="{{ id }}" class="custom-control-input selection-checkbox" type="checkbox" name="{{ type }}.{{ post.slug }}" title="Add to my selection" />
+      <label for="{{ id }}" class="custom-control-label"></label>
+  </div>
+</div>
+{%- endif -%}
+
+{%- comment -%}
+<!--
+<div class="label label-default checkbox pull-right">
+    <label>
+        <input type="checkbox" name="{{ post.collection }}[]" value="{{ post.slug }}" />
+        Filter
+    </label>
+</div>
+-->
+{%- endcomment -%}

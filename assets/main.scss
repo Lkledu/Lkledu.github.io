@@ -1,0 +1,15 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+.document-list {
+
+  perspective: 50000px;
+
+  .flipcard {
+    max-width: 30rem;
+    min-height: 14rem;
+    min-width: 25rem;
+  }
+
+}

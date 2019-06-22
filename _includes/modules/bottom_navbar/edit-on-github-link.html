@@ -1,0 +1,22 @@
+
+{%- if page.features.ghpages_link != false -%}
+
+{%- assign config = page.ghpages_link -%}
+{%- assign target = 'https://github.com/' | append: site.repository | append: '/edit/master/' | append: page.path -%}
+{%- assign text = config.text.text | default: t.edit_on_github -%}
+{%- assign title = config.title | default: t.edit_on_github -%}
+{%- assign class = config.class | default: 'btn btn-secondary' -%}
+{%- assign icon_class = config.icon.class | default: 'fa-edit' | append: page.bottom_navbar.icon.extra_class -%}
+
+{%- if config.visibility != false -%}{%- endif -%}
+{%- include bootstrap-components/link.html
+  element=page.bottom_navbar.button.element
+  target=target
+  text=text
+  title=title
+  class=class
+  icon_class=icon_class
+  text_class=config.text.class
+-%}
+
+{%- endif -%}

@@ -1,0 +1,8 @@
+
+{%- if page.features.ads != false and site.adsense.client and site.adsense.slot -%}
+<ins class="fixed-ad-container adsbygoogle"
+data-ad-client="{{ site.adsense.client }}"
+data-ad-slot="{{ site.adsense.slot }}"
+data-ad-format="{{ site.adsense.format | default: 'auto' }}"></ins>
+<div class="fixed-ad-background bg-white"></div>
+{%- endif -%}

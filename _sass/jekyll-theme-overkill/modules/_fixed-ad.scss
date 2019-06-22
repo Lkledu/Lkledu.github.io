@@ -1,0 +1,21 @@
+
+$fixed-ad-gutter-width: 10px !default;
+
+@include fixed-ad-left-top(120px, 240px, $fixed-ad-gutter-width);
+@include fixed-ad-left-top(120px, 600px, $fixed-ad-gutter-width);
+@include fixed-ad-left-top(160px, 600px, $fixed-ad-gutter-width);
+@include fixed-ad-left-top(300px, 600px, $fixed-ad-gutter-width); // (recommended)
+@include fixed-ad-left-top(300px, 1050px, $fixed-ad-gutter-width);
+@include fixed-ad-bottom(120px, 90px, 0); // Link ads
+@include fixed-ad-bottom(160px, 90px, 0); // Link ads
+@include fixed-ad-bottom(180px, 90px, 0); // Link ads
+@include fixed-ad-bottom(200px, 90px, 0); // Link ads
+@include fixed-ad-bottom(234px, 60px, 0);
+@include fixed-ad-bottom(320px, 50px, 0);
+@include fixed-ad-bottom(320px, 100px, 0); // (recommended)
+@include fixed-ad-bottom(468px, 15px, $fixed-ad-gutter-width); // Link ads
+@include fixed-ad-bottom(468px, 60px, $fixed-ad-gutter-width);
+@include fixed-ad-bottom(728px, 15px, $fixed-ad-gutter-width); // Link ads
+@include fixed-ad-bottom(728px, 90px, $fixed-ad-gutter-width); // (recommended)
+@include fixed-ad-bottom(970px, 90px, $fixed-ad-gutter-width);
+@include fixed-ad-bottom(970px, 250px, $fixed-ad-gutter-width);

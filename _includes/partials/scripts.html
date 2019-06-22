@@ -1,0 +1,60 @@
+
+{%- assign config = page.features -%}
+{%- assign lang_base = lang | split: '-' | first  | downcase -%}
+
+{%- if config.ads != false and site.adsense.client and site.adsense.slot -%}
+<script defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+{%- endif -%}
+
+{%- if config.lazyload != false -%}
+<script defer src="{{ '/node_modules/lazysizes/plugins/parent-fit/ls.parent-fit.min.js' | relative_url }}"></script>
+<script defer src="{{ '/node_modules/lazysizes/plugins/aspectratio/ls.aspectratio.min.js' | relative_url }}"></script>
+<script defer src="{{ '/node_modules/lazysizes/lazysizes.min.js' | relative_url }}"></script>
+{%- endif -%}
+
+{%- if config.icons != false -%}
+{%- if config.social_icons != false -%}
+<script defer src="{{ '/node_modules/@fortawesome/fontawesome-free/js/brands.min.js' | relative_url }}"></script>
+{%- endif -%}
+<script defer src="{{ '/node_modules/@fortawesome/fontawesome-free/js/solid.min.js' | relative_url }}"></script>
+<script defer src="{{ '/node_modules/@fortawesome/fontawesome-free/js/fontawesome.min.js' | relative_url }}"></script>
+{%- endif -%}
+
+<script src="{{ '/node_modules/jquery/dist/jquery.min.js' | relative_url }}"></script>
+
+{%- if page.plugins.bootstrap != false -%}
+<script src="{{ '/node_modules/popper.js/dist/umd/popper.min.js' | relative_url }}"></script>
+<script src="{{ '/node_modules/bootstrap/dist/js/bootstrap.min.js' | relative_url }}"></script>
+{%- endif -%}
+
+{%- if page.plugins.lunr != false or page.features.lunr != false-%}
+<script src="{{ '/node_modules/lunr/lunr.js' | relative_url }}"></script>
+<script src="{{ '/node_modules/lunr-languages/min/lunr.stemmer.support.min.js' | relative_url }}"></script>
+{%- assign available_lunr_languages = 'da de du es fi fr hu it no pt ro ru sv tr' | split: ' ' -%}
+{%- assign lunr_languages = config.lunr.langs | default: lang_base | split: ' ' | compact | uniq -%}
+{%- if lunr_languages.size > 1 -%}
+<script src="{{ '/node_modules/lunr-languages/min/lunr.multi.min.js' | relative_url }}"></script>
+{%- endif -%}
+{%- for lunr_language in lunr_languages -%}
+{%- if available_lunr_languages contains lunr_language -%}
+<script src="{{ '/node_modules/lunr-languages/min/lunr.' | append: lunr_language | append: '.min.js' | relative_url }}"></script>
+{%- endif -%}
+{%- endfor -%}
+{%- endif -%}
+
+{%- if page.plugins.select2 != false or page.features.select2 != false -%}
+<script src="{{ '/node_modules/select2/dist/js/select2.min.js' | relative_url }}"></script>
+{%- assign select2_languages = 'af ar az bg bs ca cs da de dsb el en es et eu fa fi fr gl he hi hr hsb hu hy id is it ja km ko lt lv mk ms nb nl pl ps pt-BR pt ro ru sk sl sr-Cyrl sr sv th tk tr uk vi zh-CN zh-TW' | split: ' ' -%}
+{%- if lang_base and select2_languages contains lang_base -%}
+<script src="{{ '/node_modules/select2/dist/js/i18n/' | append: lang_base | append: '.js' | relative_url }}"></script>
+{%- endif -%}
+{%- endif -%}
+
+<script src="{{ '/assets/main.js' | relative_url }}"></script>
+
+<script>
+{%- capture js -%}
+{% include scripts/jekyll-theme-overkill.js %}
+{%- endcapture -%}
+{{ js }}
+</script>
