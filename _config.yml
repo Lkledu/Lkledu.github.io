@@ -10,7 +10,7 @@ title:       'Lkledu.io'
 email:       'lkledu@gmail.com'
 description: 'Blog about dev and programming games'
 baseurl:     '/' # The subpath of your site, e.g. /blog
-url:         'lkledu.github.io' # The base hostname & protocol for your site
+url:         'https://lkledu.github.io' # The base hostname & protocol for your site
 twitter:     ''
 github:      'Lkledu'
 instagram:   ''
@@ -44,5 +44,5 @@ tag_permalink_style:  pretty
 defaults:
   - scope:
       path: '_pages'
-    values:
-      permalink: /:basename:output_ext
+    #values:
+     # permalink: /:basename:output_ext
