@@ -1,4 +1,9 @@
 ---
 label: IndexTPL
 hide_body: false
-fields: []
+fields:
+- name: tags_summary
+  type: tag_list
+  default: []
+  label: Summary
+  description: List of Categories
