@@ -22,7 +22,6 @@ Blog onde escrevo sobre meus projetos e oque estou estudando
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
-        <title>Lkledu.io</title>
     </head>
     <body>
         <header></header>
