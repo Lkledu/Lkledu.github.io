@@ -1,79 +1,0 @@
-{%- if include.posts -%}
-{%- assign posts = include.posts -%}
-{%- elsif include.type and site[include.type].size > 0 -%}
-{%- assign posts = site[include.type] | where_exp: 'item', 'item[include.type] contains page.slug' | sort: 'title' -%}
-{%- endif -%}
-{%- assign array = '' | split: ' ' -%}
-{%- if posts.size > 0 -%}
-<form class="checkbox-glyphicon checkbox-success" method="post">
-{%- for post in posts -%}
-  {%- if post[post.collection].size > 0 -%}
-  {%- assign parents = site[post.collection] | where_exp: 'item', 'post[post.collection] contains item.slug' -%}
-  {%- assign childs = site[post.collection] | where_exp: 'item', 'item[post.collection] contains post.slug' -%}
-{%- else -%}
-  {%- assign parents = nil -%}
-{%- assign childs = nil -%}
-  {%- endif -%}
-  <div class="media filter-item selection-item" {%- include filter-item-class.html post=post -%} >
-    <div class="pull-left">{%- include selection-checkbox.html post=post -%}
-    </div>
-    <div class="pull-right text-right col-sm-3 col-md-3 col-lg-3 contribute">
-      <small>{%- include search-links-inlined.html post=post -%}</small>
-    </div>
-    <div class="media-left">
-      <a href="{{ post.url | relative_url }}" class="img-wrapper img-wrapper-xs">
-        {%- if post.countries.size > 0 -%}
-        {%- assign country = site.countries | where_exp: 'item', 'post.countries contains item.slug' | first -%}
-        <span class="flag-icon flag-icon-{{ country.iso2-code | downcase }} flag-icon-squared" title="{{ country.title }}"></span>
-        {%- endif -%}
-        {%- if post.image -%}
-        {%- include image.html path=post.image-path src=post.image width=50 height=50 alt=post.title class="media-object" -%}
-        {%- endif -%}
-      </a>
-    </div>
-    <div class="media-body">
-      {%- include partials/initial-filter-attributs.html title=post.title -%}
-      <h4 class="media-heading">
-        <a href="{{ post.url | prepend: site.github.url }}">
-          {{ post.title }}
-        </a>
-        {%- if parents.size > 0 -%}
-        <small>
-          <span> (</span>
-{%- for parent in parents -%}
-          <a href="{{ parent.url }}">{{ parent.title }}</a>
-          {%- unless forloop.last -%}
-          <span>, </span>
-          {%- endunless -%}
-          {%- endfor -%}
-          <span>)</span>
-        </small>
-        {%- endif -%}
-      </h4>
-
-{%- if post.description -%}
-      <p>{{ post.description }}</p>{%- else -%}
-      <p>{{ post.excerpt }}</p>{%- endif -%}{%- if childs.size > 0 -%}
-      <small>
-        <span>{{ t.see_also }}</span>
-{%- for child in childs -%}
-        <a href="{{ child.url }}">{{ child.title }}</a>
-        {%- unless forloop.last -%}
-        <span>, </span>
-        {%- endunless -%}
-        {%- endfor -%}
-      </small>
-      {%- endif -%}
-
-      {%- if page.categories.size > 0 -%}
-      <small>
-        <span>{{ t.categories }}</span>
-        <span>{{ page.categories | join: ', ' }}</span>
-      </small>
-      {%- endif -%}
-
-    </div>
-  </div>
-{%- endfor -%}
-</form>
-{%- endif -%}
