@@ -125,19 +125,8 @@ Licensed MIT
     
           <nav class="nav-main nav-main__scroll" role="navigation">
             <ul>
-              
-                
                 <li><a class="page-link" href="/overkyll-jekyll-theme/about.html">About</a></li>
-                
-              
-                
                 <li><a class="page-link" href="/overkyll-jekyll-theme/archives.html">Archives</a></li>
-                
-              
-                
-              
-                
-              
             </ul>
           </nav>
       </div>
