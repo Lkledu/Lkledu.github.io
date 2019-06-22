@@ -1,3 +1,57 @@
+
+# Skip unwanted files created by Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Skip the Jekyll compiled files, Github pages will compile for you
 _site
+
+# Skip Jekyll temp files
 .sass-cache
 .jekyll-metadata
+.tmp
+*.log
+
+# Temporary files
+.bundle
+.sass-cache
+Gemfile.lock
+*.gem
+
+# Node modules are only useful locally
+#node_modules
+
+# Skip Bower/NPM dependencies sources, examples, etc...
+node_modules/@fortawesome/fontawesome-free/*
+node_modules/animate.css/*
+node_modules/bootstrap/*
+node_modules/bootswatch/*
+node_modules/cookieconsent/*
+node_modules/jquery/*
+node_modules/jquery-mousewheel/*
+node_modules/lazysizes/*
+node_modules/lunr/*
+node_modules/lunr-languages/*
+node_modules/popper.js/*
+node_modules/select2/*
+node_modules/select2-bootstrap4-theme/*
+
+# Except used files (parent directories must not be exclude)
+!node_modules/@fortawesome/fontawesome-free/js/*.min.js
+!node_modules/animate.css/*.css
+!node_modules/bootstrap/dist/js/*.min.js
+!node_modules/bootstrap/scss
+!node_modules/bootswatch/dist
+!node_modules/cookieconsent/build
+!node_modules/jquery/dist/*.min.js
+!node_modules/jquery-mousewheel/*.js
+!node_modules/lazysizes/*.min.js
+!node_modules/lazysizes/plugins/aspectratio/*.min.js
+!node_modules/lazysizes/plugins/parent-fit/*.min.js
+!node_modules/lunr/*.js
+!node_modules/lunr-languages/min
+!node_modules/popper.js/dist/umd/*.min.js
+!node_modules/select2/dist/js/*.min.js
+!node_modules/select2/src/scss/*
+!node_modules/select2-bootstrap4-theme/src
