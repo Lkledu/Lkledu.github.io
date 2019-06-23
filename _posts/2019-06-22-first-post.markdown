@@ -8,7 +8,7 @@ date: 2019-06-22 20:40:00
 
 This is my first dev blog, where I will post some kind of articles about what i'm studying.
 
-I'm a programmer in Brazil, who likes of data structure and your implementations. I'm father of two kittes too, who are sisters.
+I'm a programmer in Brazil, who likes of data structure and your implementations. I'm father of two kittens too, who are sisters.
 
 ##### Why Jerkyll?
 
