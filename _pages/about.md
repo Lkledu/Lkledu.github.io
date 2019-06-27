@@ -4,5 +4,4 @@ title: About
 image: '/images/pages/about.jpeg'
 ---
 
-I'm Eduardo Teixeira de Souza
-(github.com/Lkledu)[https://github.com/Lkledu]
+I'm Eduardo Teixeira de Souza&nbsp;[...](https://github.com/Lkledu){: target="_blank"}
