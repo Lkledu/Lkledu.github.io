@@ -14,20 +14,20 @@ The algorithm receive a table with two columns. The first column are the X value
 
 The function is:
 
-{% highlight %}
+{% highlight js %}
 ƒ(Y) = a+bx;
 {% endhighlight %}
 
 where a is:
-{% highlight %}
+{% highlight js %}
 ƒ(a) = media(Σy) - b \* media(Σx);
 {% endhighlight %}
 and b is:
-{% highlight %}
+{% highlight js %}
 ƒ(b) = ((N \* Σxy) - (Σ(x) \* Σy)) / (N \* Σx&sup2; - (Σx \* Σx));
 {% endhighlight %}
 for calculate the relative error we have r:
-{% highlight %}
+{% highlight js %}
 ƒ(r) = (Σxy - ((Σx \* Σy) / N)) / ((√(Σ(x\_square\_table) - Σx&sup2; / N)) \* (√(Σx&sup2; - (Σx)&sup2; / N)));
 {% endhighlight %}
 The implementation can be access in [here](https://github.com/Lkledu/evolve-asteroids/blob/master/Assets/Scripts/LeastSquare.cs).
