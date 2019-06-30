@@ -14,7 +14,9 @@ The algorithm receive a table with two columns. The first column are the X value
 
 The function is:
 
+{highlight}
 ƒ(Y) = a+bx;
+{endhighlight}
 
 where a is:
 
