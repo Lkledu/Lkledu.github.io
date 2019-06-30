@@ -36,7 +36,7 @@ Before:
 
 ![Before implementation](/uploads/img-20190523-wa0014.jpeg "Before"){: width="615" height="346"}
 
-After:
+After: It's possible to see the great difference in the learn curve produced across the generations. With the algorithm the cromossomes learn more faster, and the learning is maintained.
 
 ![After implementation](/uploads/img-20190523-wa0016.jpeg "After"){: width="615" height="346"}
 
