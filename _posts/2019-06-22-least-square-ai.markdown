@@ -30,4 +30,14 @@ for calculate the relative error we have r:
 
 The implementation can be access in [here](https://github.com/Lkledu/evolve-asteroids/blob/master/Assets/Scripts/LeastSquare.cs).
 
+The result:
+
+Before:
+
+![Before implementation](/uploads/img-20190523-wa0014.jpeg "Before"){: width="615" height="346"}
+
+After:
+
+![After implementation](/uploads/img-20190523-wa0016.jpeg "After"){: width="615" height="346"}
+
 That type of algorithm are most used in optimization process.
