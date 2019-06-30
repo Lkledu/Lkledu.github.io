@@ -2,7 +2,7 @@
 layout: post
 title: Least Square AI
 author: Eduardo
-tag: blog
+tag: [blog, statistic, AI]
 date: 2019-06-22 20:40:00
 ---
 
