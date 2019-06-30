@@ -14,7 +14,7 @@ The algorithm receive a table with two columns. The first column are the X value
 
 The function is:
 
-{% highlight js %}
+{% highlight c %}
 ƒ(Y) = a+bx;
 {% endhighlight %}
 
