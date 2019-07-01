@@ -15,7 +15,7 @@ The algorithm receive a table with two columns. The first column are the X value
 #### The function is:
 
 ~~~tex
-ƒ(\^{Y}) = a+bx;
+ƒ(\^Y) = a+bx;
 ~~~
 
 The Y is the approximation expected of the line created by a and b
