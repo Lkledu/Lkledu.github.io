@@ -2,7 +2,7 @@
 layout: post
 title: Least Square AI
 author: Eduardo
-tag: [blog, statistic, AI]
+tag:
 date: 2019-06-22 20:40:00
 ---
 
@@ -12,27 +12,35 @@ I was watching statistical classrooms and learn Linear Regression who is a linea
 
 The algorithm receive a table with two columns. The first column are the X values, or the value who you want to process. The second are the Y values, they are values related to X. In my project I use two lists, one with the score of the player, and other with the life time of the player. The function return a list of ^Y values. If that returned list are putted in a graph of excel for example, it will create a line graph.
 
-The function is:
+#### The function is:
 
-{% highlight c %}
+~~~tex
 ƒ(Y) = a+bx;
-{% endhighlight %}
+~~~
 
-where a is:
-{% highlight bash %}
+The Y is the approximation expected of the line created by a and b
+
+where a is the interception obtained by the function:
+
+~~~tex
 ƒ(a) = media(Σy) - b \* media(Σx);
-{% endhighlight %}
-and b is:
-{% highlight bash %}
+~~~
+
+and b is the slope obtained by the function:
+
+~~~tex
 ƒ(b) = ((N \* Σxy) - (Σ(x) \* Σy)) / (N \* Σx&sup2; - (Σx \* Σx));
-{% endhighlight %}
+~~~
+
 for calculate the relative error we have r:
-{% highlight bash %}
+
+~~~tex
 ƒ(r) = (Σxy - ((Σx \* Σy) / N)) / ((√(Σ(x\_square\_table) - Σx&sup2; / N)) \* (√(Σx&sup2; - (Σx)&sup2; / N)));
-{% endhighlight %}
+~~~
+
 The implementation can be access in [here](https://github.com/Lkledu/evolve-asteroids/blob/master/Assets/Scripts/LeastSquare.cs).
 
-The result:
+#### The result:
 
 Before:
 
