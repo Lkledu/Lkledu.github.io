@@ -22,14 +22,14 @@ The Y is the approximation expected of the line created by a and b
 
 where a is the interception obtained by the function:
 
-$$
-    \bar{a} = {media(\sum{y})} - b \* \bar{\sum{x}};
-$$
+~~~tex
+ƒ{a} = media(Σy) - b * media(Σx);
+~~~
 
 and b is the slope obtained by the function:
 
 ~~~tex
-ƒ(b) = ((N \* Σxy) - (Σ(x) \* Σy)) / (N \* Σx&sup2; - (Σx \* Σx));
+ƒ(b) = ((N * Σxy) - (Σ(x) * Σy)) / (N * Σx&sup2; - (Σx * Σx));
 ~~~
 
 for calculate the relative error we have r:
