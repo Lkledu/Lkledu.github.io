@@ -36,7 +36,10 @@ exclude:
   - Gemfile.lock
 
 # disqus
+#---
+layout: default
 comments: true
+#---
 
 # Tags
 tag_page_dir:         tag
