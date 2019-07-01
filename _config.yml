@@ -46,6 +46,9 @@ tag_page_dir:         tag
 tag_page_layout:      tag_page
 tag_permalink_style:  pretty
 
+#math notation
+katex: true # Enable if using math markup
+
 # Pages path
 defaults:
   - scope:
