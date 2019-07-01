@@ -29,13 +29,13 @@ where a is the interception obtained by the function:
 and b is the slope obtained by the function:
 
 ~~~tex
-ƒ(b) = ((N * Σxy) - (Σ(x) * Σy)) / (N * Σx&sup2; - (Σx * Σx));
+ƒ(b) = ((N * Σxy) - (Σ(x) * Σy)) / (N * Σx²; - (Σx * Σx));
 ~~~
 
 for calculate the relative error we have r:
 
 ~~~tex
-ƒ(r) = (Σxy - ((Σx \* Σy) / N)) / ((√(Σ(x\_square\_table) - Σx&sup2; / N)) \* (√(Σx&sup2; - (Σx)&sup2; / N)));
+ƒ(r) = (Σxy - ((Σx \* Σy) / N)) / ((√(Σ(x\_square\_table) - Σx²; / N)) \* (√(Σx²; - (Σx)² / N)));
 ~~~
 
 The implementation can be access in [here](https://github.com/Lkledu/evolve-asteroids/blob/master/Assets/Scripts/LeastSquare.cs).
