@@ -23,7 +23,7 @@ The Y is the approximation expected of the line created by a and b
 where a is the interception obtained by the function:
 
 $$
-ƒ(a) = media(\sum{y}) - b \* \bar{\sum{x}};
+    \bar{a} = {media(\sum{y})} - b \* \bar{\sum{x}};
 $$
 
 and b is the slope obtained by the function:
