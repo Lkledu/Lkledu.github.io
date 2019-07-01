@@ -2,7 +2,7 @@
 layout: post
 title: Welcome to Jekyll!
 featured: true
-tags: [ frontpage, jekyll, blog]
+tag: [ frontpage, jekyll, blog]
 image:
 ---
 
