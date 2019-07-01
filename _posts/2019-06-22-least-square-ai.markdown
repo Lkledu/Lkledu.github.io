@@ -19,15 +19,15 @@ The function is:
 {% endhighlight %}
 
 where a is:
-{% highlight js %}
+{% highlight bash %}
 ƒ(a) = media(Σy) - b \* media(Σx);
 {% endhighlight %}
 and b is:
-{% highlight js %}
+{% highlight bash %}
 ƒ(b) = ((N \* Σxy) - (Σ(x) \* Σy)) / (N \* Σx&sup2; - (Σx \* Σx));
 {% endhighlight %}
 for calculate the relative error we have r:
-{% highlight js %}
+{% highlight bash %}
 ƒ(r) = (Σxy - ((Σx \* Σy) / N)) / ((√(Σ(x\_square\_table) - Σx&sup2; / N)) \* (√(Σx&sup2; - (Σx)&sup2; / N)));
 {% endhighlight %}
 The implementation can be access in [here](https://github.com/Lkledu/evolve-asteroids/blob/master/Assets/Scripts/LeastSquare.cs).
