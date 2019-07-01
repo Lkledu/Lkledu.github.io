@@ -15,8 +15,6 @@ The algorithm receive a table with two columns. The first column are the X value
 #### The function is:
 
 ~~~tex
-\sqrt
-
 ƒ(Y) = a+bx;
 ~~~
 
