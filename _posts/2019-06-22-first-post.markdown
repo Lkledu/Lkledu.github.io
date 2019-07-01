@@ -2,7 +2,7 @@
 layout: post
 title: First post
 author: Eduardo
-tag: [blog]
+tags: [blog]
 date: 2019-06-22 20:40:00
 ---
 
