@@ -15,7 +15,7 @@ The algorithm receive a table with two columns. The first column are the X value
 #### The function is:
 
 ~~~tex
-ƒ(Y) = a+bx;
+ƒ(Y) = a+bx
 ~~~
 
 The Y is the approximation expected of the line created by a and b
@@ -23,19 +23,19 @@ The Y is the approximation expected of the line created by a and b
 where a is the interception obtained by the function:
 
 ~~~tex
-ƒ{a} = media(Σy) - b * media(Σx);
+ƒ{a} = media(Σy) - b * media(Σx)
 ~~~
 
 and b is the slope obtained by the function:
 
 ~~~tex
-ƒ(b) = ((N * Σxy) - (Σ(x) * Σy)) / (N * Σx²; - (Σx * Σx));
+ƒ(b) = ((N * Σxy) - (Σ(x) * Σy)) / (N * Σx² - (Σx * Σx))
 ~~~
 
 for calculate the relative error we have r:
 
 ~~~tex
-ƒ(r) = (Σxy - ((Σx \* Σy) / N)) / ((√(Σ(x\_square\_table) - Σx²; / N)) \* (√(Σx²; - (Σx)² / N)));
+ƒ(r) = (Σxy - ((Σx \* Σy) / N)) / ((√(Σ(x\_square\_table) - Σx²; / N)) \* (√(Σx² - (Σx)² / N)))
 ~~~
 
 The implementation can be access in [here](https://github.com/Lkledu/evolve-asteroids/blob/master/Assets/Scripts/LeastSquare.cs).
