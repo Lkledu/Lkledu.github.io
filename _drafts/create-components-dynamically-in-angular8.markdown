@@ -13,7 +13,7 @@ After a long research I discover what i came share here.
 In angular, to instantiate a html component we need of two references. One for the local were the component will be rendered and another for the component. For the reference of the locale, we can create a directive, or we can use a variable in html's tag:
 
 {% highlight html %}
-&lt;div \#variable&gt;&lt;/div&gt;
+<div #variable> </div>
 {% endhighlight %}
 
 After create the variable, we use the decorator ViewChild in our class component:
