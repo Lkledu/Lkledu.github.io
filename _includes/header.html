@@ -1,37 +1,44 @@
-<header class='c-header'>
-
-  <div class='o-grid'>
-    <div class='o-grid__col o-grid__col--full'>
-      <div class='c-header__inner'>
-
-        <div class='o-grid'>
-          <div class='o-grid__col o-grid__col--3-4-s'>
-            <div class='c-logo u-text-left'>
-              <a class='c-logo__link' href='{{ site.baseurl }}/'>{{ site.title }}</a>
-            </div>
-          </div>
-
-          <div class='o-grid__col o-grid__col--1-4-s'>
-            <label class='js-off-canvas-toggle c-off-canvas-toggle' aria-label='Toggle navigation'>
-              <span class='c-off-canvas-toggle__icon'></span>
-            </label>
-          </div>
-
-          <div class='o-grid__col o-grid__col--1-4-s'>
-            <div class='c-off-canvas-content'>
-              <label class='js-off-canvas-toggle c-off-canvas-toggle c-off-canvas-toggle--close'>
-                <span class='c-off-canvas-toggle__icon'></span>
-              </label>
-
-              <ul class='c-nav o-plain-list '>
-                {% include navigation.html %}
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
+<header class="site-header">
+	<div class="branding">
+		{% if site.theme_settings.gravatar %}
+		<a href="{{ site.baseurl }}/">
+			<img class="avatar" src="https://secure.gravatar.com/avatar/{{ site.theme_settings.gravatar }}?s=100" alt=""/>
+		</a>
+		{% elsif site.theme_settings.avatar %}
+		<a href="{{ site.baseurl }}/">
+			<img class="avatar" src="{{ site.baseurl }}/{{ site.theme_settings.avatar }}" alt=""/>
+		</a>
+		{% endif %}
+		<h1 class="site-title">
+			<a href="{{ site.baseurl }}/">{{ site.theme_settings.title }}</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			{% for page in site.pages %}
+			{% if page.title and page.hide != true %}
+			<li>
+				<a class="page-link" href="{{ page.url | relative_url }}">
+					{{ page.title }}
+				</a>
+			</li>
+			{% endif %}
+			{% endfor %}
+			<!-- Social icons from Font Awesome, if enabled  -->
+			{% include icons.html %}
+            
+            <!-- Search bar -->
+            {% if site.theme_settings.search %}
+            <li>
+            <form action="{{ site.baseurl }}/search.html" method="get">
+                <input type="text" id="search-box" name="query" placeholder="Search" class="">
+                <button type="submit" class="">
+                    <i class="fa fa-fw fa-search"></i>
+                </button>
+            </form>
+            </li>
+            {% endif %}
+		</ul>
+	</nav>
+    
 </header>

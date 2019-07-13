@@ -14,29 +14,32 @@ The algorithm receive a table with two columns. The first column are the X value
 
 #### The function is:
 
-~~~tex
-ƒ(Y) = a+bx
-~~~
+$$
+ƒ(\hat{Y}) = a+bx
+$$
 
 The Y is the approximation expected of the line created by a and b
 
 where a is the interception obtained by the function:
 
-~~~tex
-ƒ{a} = media(Σy) - b * media(Σx)
-~~~
+$$
+ƒ(a) = \bar{\sum y} - b * \bar{\sum x}
+$$
 
 and b is the slope obtained by the function:
 
-~~~tex
-ƒ(b) = ((N * Σxy) - (Σ(x) * Σy)) / (N * Σx² - (Σx * Σx))
-~~~
+$$
 
-for calculate the relative error we have r:
 
-~~~tex
-ƒ(r) = (Σxy - ((Σx \* Σy) / N)) / ((√(Σ(x\_square\_table) - Σx²; / N)) \* (√(Σx² - (Σx)² / N)))
-~~~
+ƒ(b) = \dfrac{((n * \sum xy) - ((\sum x) * (\sum y))}
+        {(n * (\sum x^2) - (\sum x^2))} 
+$$
+
+for calculate the relative error we have r²:
+
+$$
+ƒ(r^2) = \dfrac{ \bigg( \sum xy - \dfrac{\sum x * \sum y}{n} \bigg)^2}{ \bigg(\sum x^2  - \dfrac{ (\sum x)^2}{n} \bigg) * \bigg(\sum x^2 - \dfrac{(\sum x)^2}{n} \bigg)}
+$$
 
 The implementation can be access in [here](https://github.com/Lkledu/evolve-asteroids/blob/master/Assets/Scripts/LeastSquare.cs).
 

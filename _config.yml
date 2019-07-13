@@ -1,57 +1,86 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# SITE CONFIGURATION
+baseurl: "/type-theme"
+url: "https://rohanchandra.github.io/"
 
-# Site settings
-title:       'Lkledu.io'
-email:       'lkledu@gmail.com'
-description: 'Blog about dev and programming games'
-baseurl:     '' # The subpath of your site, e.g. /blog
-url:         '' # The base hostname & protocol for your site
-twitter:     '#'
-github:      'https://github.com/Lkledu'
-instagram:   '#'
-facebook:    '#'
+# THEME-SPECIFIC CONFIGURATION
+theme_settings:
+  # Meta
+  title: Lkledu
+  avatar: assets/img/spaghetti_cat.jpg
+  favicon: assets/favicon.ico
+  gravatar: # Email MD5 hash
+  description: "A blog where I share what I learn" # used by search engines
 
-markdown:  kramdown
-permalink: pretty
-paginate:  60
+  # Header and footer text
+  header_text: >
+     <h3>Hi, I'm Eduardo.</h3>
 
+     <h5>I'm a IT student living in Brazil.SP.Americana.</h5>
+  header_text_feature_image:
+  footer_text: >
+   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
+
+  # Icons
+  rss: false
+  email_address: "lkledu@gmail.com" # Full email address, e.g. "sam@example.com"
+  behance:
+  bitbucket:
+  dribbble:
+  facebook:
+  flickr:
+  gitlab:
+  github: "Lkledu/"
+  gitter:
+  google_plus:
+  instagram:
+  linkedin:  # Full URL
+  pinterest:
+  reddit:
+  soundcloud:
+  stack_exchange:  # Full URL
+  steam: "Lkledu"
+  tumblr:
+  twitter: 
+  wordpress:
+  youtube:
+
+  # Scripts
+  google_analytics: # Tracking ID, e.g. "UA-000000-01"
+  disqus_shortname:
+  katex: true # Enable if using math markup
+  search: false # Enable the search feature
+
+  # Localization strings
+  str_follow_on: "Follow on"
+  str_rss_follow: "Follow RSS feed"
+  str_email: "Email"
+  str_next_post: "Next post"
+  str_previous_post: "Previous post"
+  str_next_page: "Next"
+  str_previous_page: "Prev"
+  str_continue_reading: "Continue reading"
+  str_javascript_required_disqus: "Please enable JavaScript to view comments."
+  str_search_no_results: "No results found."
+
+  # Colours, typography and padding
+  # Open the "_sass > base" folder, and open "_variables.scss"
+  google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
+
+  # Post navigation
+  post_navigation: false
+
+# PAGINATION
+paginate: 5
+paginate_path: "blog/page:num"
+
+# BUILD SETTINGS
+markdown: kramdown
+highlighter: rouge
 sass:
-  style: compressed
-
-gems:
-  - jekyll-paginate
-  - jekyll/tagging
-
-include:
-  - _pages
-
+  sass_dir: _sass
+  style: :compressed
+plugins: [jekyll-paginate]
+theme: jekyll-theme-type
 exclude:
-  - vendor
   - Gemfile
   - Gemfile.lock
-
-# disqus
-#---
-layout: default
-comments: true
-#---
-
-# Tags
-tag_page_dir:         tag
-tag_page_layout:      tag_page
-tag_permalink_style:  pretty
-
-#math notation
-katex: true # Enable if using math markup
-
-# Pages path
-defaults:
-  - scope:
-      path: '_pages'
-    #values:
-     # permalink: /:basename:output_ext
