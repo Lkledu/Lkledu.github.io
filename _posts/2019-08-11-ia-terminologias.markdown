@@ -2,7 +2,7 @@
 layout: post
 title: IA Terminologias
 author: Eduardo
-tag: [AI, Math, Statistic, C#, pt]
+tag: [AI, pt]
 date: 2019-08-11 13:29:00
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: First post
 author: Eduardo
 tag: [blog, en]
-date: 2019-06-22 20:40:00
+date: 2019-06-22 20:30:00
 ---
 
 This is my first dev blog, where I will post some kind of articles about what i'm studying.
