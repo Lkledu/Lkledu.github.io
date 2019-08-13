@@ -2,7 +2,7 @@
 layout: post
 title: Creating components dynamically in Angular8
 author: Eduardo
-tag: [blog, Web, Angular, en]
+tag: [Web, Angular, en]
 date: 2019-06-22 20:40:00
 ---
 

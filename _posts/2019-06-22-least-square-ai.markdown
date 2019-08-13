@@ -2,7 +2,7 @@
 layout: post
 title: Least Square AI
 author: Eduardo
-tag: [AI, Math, Statistic, C#, en]
+tag: [AI, Math, Statistic, CSharp, en]
 date: 2019-06-22 20:40:00
 ---
 
