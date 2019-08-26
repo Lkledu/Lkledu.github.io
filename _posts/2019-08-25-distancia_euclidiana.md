@@ -3,7 +3,7 @@ layout: post
 title: Distância Euclidiana
 author: Eduardo
 tag: [IA, pt]
-date: 2019-08-25 20:56:00
+date: 2019-08-25 22:56:00
 ---
 
 A distância euclidiana pode ser medida utilizando a seguinte expressão:
