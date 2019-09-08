@@ -21,9 +21,10 @@ $$
 \sqrt{ 49 + 16 + 1}
 
 \sqrt{66}
+$$
 
 = 8,1240...
-$$
+
 
 Logo distancia entre estes 2 pontos de dimensão 3 é 8,1240.
 A formula pode ser utilizada para pontos com n dimensões, desde que se respeite operação de $$(p_n - p_n)$$ onde n é a posição do valor dentro do vetor.

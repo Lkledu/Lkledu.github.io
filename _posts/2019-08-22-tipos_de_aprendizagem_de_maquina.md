@@ -3,7 +3,7 @@ layout: post
 title: Tipos de Aprendizagem de Máquina
 author: Eduardo
 tag: [IA, pt]
-date: 2019-06-22 20:40:00
+date: 2019-08-22 20:40:00
 ---
 
 Dentro do assunto Machine Learning, há quatro tipos de aprendizagem de máquina. Estes são a forma como um algoritmo opera para descobrir por meio estatístico a melhor resposta para seu algoritmo.
@@ -29,6 +29,8 @@ Aprendizado Supervisionado:
 Aprendizado Não Supervisionado:
     No caso de algoritmos não supervisionados, eles funcionam como o caso dos supervisionados, com a diferença que o dataset não é rotulado.
 Aprendizado Semi-Supervisionado:
+    Igual o aprendizado supervisionado, mas parte do cojunto do dataset é inserido sem um rótulo.
 Aprendizado por Reforço:
+    Nos algoritmos de aprendizagem por reforço, os modelos possuem a capacidade de armazenar informações que são inseridas, para usá-las posteriormente com novos inputs, permitindo que o próprio sistema se aperfeiçoe e se ajuste através do contínuo aprimoramento do dataset.
 
 fonte: "The Hundred-Page Machine Learning Book"(BURKOV'S, Andriy, 2019, p.1-3)
