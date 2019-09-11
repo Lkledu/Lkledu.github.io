@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Naïve Bayes
+title: Teorema de Bayes
 author: Eduardo
-tag: [IA, pt]
+tag: [Math, Statistic, pt]
 date: 2019-06-22 20:40:00
 ---
 
