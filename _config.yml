@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
-baseurl: "/type-theme"
-url: "https://rohanchandra.github.io/"
+baseurl: "/"
+url: "https://lkledu.github.io/"
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
@@ -15,7 +15,7 @@ theme_settings:
   header_text: >
      <h3>Hi, I'm Eduardo.</h3>
 
-     <h5>I'm a IT student living in Brazil.SP.Americana.</h5>
+     <h5>I'm a IT student living in Brasil.SP.Americana.</h5>
   header_text_feature_image:
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
