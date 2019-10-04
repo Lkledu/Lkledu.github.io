@@ -13,6 +13,7 @@ $$
 $$
 
 Tal que, por exemplo p = {8,5,3} e q = {1,1,2} :
+
 $$
 \sqrt{\left(8 - 1\right)^2 + \left(5 - 1\right)^2 + \left(3 - 2\right)^2}
 $$

@@ -13,3 +13,4 @@ Esse algoritmo é um dos mais simples dentre os algoritmos de aprendizagem super
 $$
 
 $$
+
