@@ -16,7 +16,7 @@ theme_settings:
      <h3>Hi, I'm Eduardo.</h3>
 
      <h5>I'm a IT student living in Brasil.SP.Americana.</h5>
-  header_text_feature_image:
+  header_text_feature_image: assets/img/Touched_by_His_Noodly_Appendage.jpg
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
 
