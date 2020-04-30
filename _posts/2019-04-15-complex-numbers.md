@@ -39,9 +39,13 @@ Following this rule we can proof that i² = -1:
 
 $$
         (0,1) * (0,1)
+
         (0*0 - 1*1) + (0*1 + 1*0)
+        
         (0 - 1) + (0 + 0)
+        
         -1 + 0
+        
         -1 or in the complex form (-1,0)
 $$
 
