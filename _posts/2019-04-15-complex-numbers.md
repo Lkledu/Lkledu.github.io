@@ -19,26 +19,28 @@ But for be possible to exist a new set of numbers, it's need to accept the ariti
 
 Two of that operations are easely demonstrated, and the others are only the inverse.
 
-# SUM
-    we can sum to complex numbers like we do with coordinates. if we had two xy coordinates, first we sum the x part, and after we sum the y part. It'll result in a new xy coordinate:
+### SUM
+we can sum to complex numbers like we do with coordinates. if we had two xy coordinates, first we sum the x part, and after we sum the y part. It'll result in a new xy coordinate:
 
         (a,b) + (c,d) = (a+c, b+d)
         (1,2) + (3,4) → (1+3, 2+4) = (4,6)
 
-    that's can be done with the a+bi complex representation too (this is only a new way to represent the same number).
+that's can be done with the a+bi complex representation too (this is only a new way to represent the same number).
         1+2i + 3+4i → (1+3) + (2+4)i = 4+6i
 
-# MULTIPLICATION
-    for multiplication it's a bit different. We need to do an operation following the rule:
-    -given two (a,b) and (c,d) complex numbers
-    -we multiply the real parts with each other, and do the same with the imaginary part. Like this:
+### MULTIPLICATION
+for multiplication it's a bit different. We need to do an operation following the rule:
+-given two (a,b) and (c,d) complex numbers
+-we multiply the real parts with each other, and do the same with the imaginary part. Like this:
         (ac - bd) + (ad + bc)
 
-    Following this rule we can proof that i² = -1:
+Following this rule we can proof that i² = -1:
         (0,1) * (0,1)
         (0*0 - 1*1) + (0*1 + 1*0)
         (0 - 1) + (0 + 0)
         -1 + 0
         -1 or in the complex form (-1,0)
 
-        ploting this in a cartesian grid, we can see that, multiplying the real part of a number has the property of scaling this value, but multiplying the imaginary part, will turn 1/4 clock wise that number in the grid.
+ploting this in a cartesian grid, we can see that, multiplying the real part of a number has the property of scaling this value, but multiplying the imaginary part, will turn 1/4 clock wise that number in the grid.
+
+it's possible to do those same operations with rational numbers, we only need to remember that rational numbers also are complex numbers, but with the imaginary part equals zero (a+0i or (a,0)).    
