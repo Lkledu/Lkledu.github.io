@@ -26,6 +26,7 @@ we can sum to complex numbers like we do with coordinates. if we had two xy coor
         (1,2) + (3,4) → (1+3, 2+4) = (4,6)
 
 that's can be done with the a+bi complex representation too (this is only a new way to represent the same number).
+
         1+2i + 3+4i → (1+3) + (2+4)i = 4+6i
 
 ### MULTIPLICATION
@@ -35,11 +36,14 @@ for multiplication it's a bit different. We need to do an operation following th
         (ac - bd) + (ad + bc)
 
 Following this rule we can proof that i² = -1:
+
+$$
         (0,1) * (0,1)
         (0*0 - 1*1) + (0*1 + 1*0)
         (0 - 1) + (0 + 0)
         -1 + 0
         -1 or in the complex form (-1,0)
+$$
 
 ploting this in a cartesian grid, we can see that, multiplying the real part of a number has the property of scaling this value, but multiplying the imaginary part, will turn 1/4 clock wise that number in the grid.
 
