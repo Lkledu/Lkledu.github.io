@@ -38,15 +38,11 @@ for multiplication it's a bit different. We need to do an operation following th
 Following this rule we can proof that i² = -1:
 
 $$
-        (0,1) * (0,1)
-
-        (0*0 - 1*1) + (0*1 + 1*0)
-        
-        (0 - 1) + (0 + 0)
-        
-        -1 + 0
-        
-        -1 or in the complex form (-1,0)
+        (0,1) * (0,1)\\
+        (0*0 - 1*1) + (0*1 + 1*0)\\
+        (0 - 1) + (0 + 0)\\
+        -1 + 0\\
+        -1 or in the complex form (-1,0)\\
 $$
 
 ploting this in a cartesian grid, we can see that, multiplying the real part of a number has the property of scaling this value, but multiplying the imaginary part, will turn 1/4 clock wise that number in the grid.
